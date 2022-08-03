@@ -1,0 +1,25 @@
+.navbar {
+  font-family: "century gothic";
+  width: 100%;
+  margin: 3% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .link-logo {
+  width: 30%;
+}
+.navbar .link-logo .logo-btn {
+  font-size: 4em;
+  font-weight: bold;
+}
+.navbar .link-btn {
+  width: 15%;
+  text-align: center;
+}
+.navbar .link-btn .btn {
+  font-size: 0.9em;
+}
+.navbar .link-btn .btn .titulo-btn {
+  font-weight: bold;
+}/*# sourceMappingURL=Navbar.css.map */
