@@ -2,5 +2,6 @@
     width: 100%;
     min-height: 60vh;
     padding: 1rem 4rem;
+    padding: clamp(.1rem, .1rem + 1vw, 1rem) clamp(.4rem, .4rem + 1vw, 4rem);
     max-width: 1400px;
 }

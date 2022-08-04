@@ -6,7 +6,7 @@
     flex-flow: column wrap;
     justify-content: start;
     align-items: stretch;
-    gap: 2.4rem;
+    gap: 3rem;
     margin-bottom: 3.8rem;
 
     &__banner{
@@ -18,24 +18,30 @@
         font-style: italic;
         position: relative;
         border-radius: .2em;
-        background: linear-gradient(45deg, $color-primero, $color-tercero);
+        background: linear-gradient(45deg, rgb(168, 23, 96), rgb(40, 92, 189), rgb(123, 15, 247));
+        background-size: 400%;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        animation: bannerGrad 20s infinite linear alternate;
+        overflow: hidden;
 
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: 0 50%;
+            object-position: 0 60%;
             border-radius: inherit;
-            filter: contrast(120%) brightness(110%);
+            filter: contrast(140%) brightness(110%);
             mix-blend-mode: screen;
         }
 
         p{
             position: absolute;
-            bottom: 25%;
-            right: 10%;
+            bottom: 15%;
+            right: 5%;
             color: white;
-            text-shadow: 2px 2px 0 $color-primero, 4px 4px 20px $color-segundo;
+            text-shadow: 1px 1px 0 $color-primero, 4px 4px 20px $color-segundo;
+            animation: bannerText 10s infinite ease-in-out;
         }
     }
 
@@ -44,7 +50,8 @@
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        gap: .4rem;
+        gap: 2rem;
+        width: 100%;
 
         &__card{
             display: flex;
@@ -52,6 +59,7 @@
             justify-content: center;
             align-items: center;
             width: clamp(300px, 300px + .4vw, 340px);
+            max-width: 100%;
             font-size: 1rem;
             font-family: 'century gothic', sans-serif;
             font-weight: bold;
@@ -63,6 +71,7 @@
 
                 img{
                     width: 100%;
+                    max-height: 100%;
                     aspect-ratio: inherit;
                     border-radius: inherit;
                     object-fit: cover;
@@ -88,8 +97,76 @@
                     background: $color-primero;
                     padding: .2em 1.8em;
                     border-radius: .4em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
+    }
+}
+
+
+
+@media (max-width: 1280px){
+    .home{
+        &__categories{
+            justify-content: center;
+            gap: 3rem;
+        }
+    }
+}
+@media (max-width: 700px){
+    .home{
+        &__categories{
+            flex-direction: column;
+            gap: 3rem;
+
+            &__card{
+                width: 100%;
+
+                &__imgContainer{
+                    height: 30vh;
+                }
+            }
+        }
+    }
+}
+
+
+
+@keyframes bannerGrad {
+    0%{
+        background-position: bottom left;
+    }
+    25%{
+        background-position: top left;
+    }
+    50%{
+        background-position: top right;
+    }
+    75%{
+        background-position: bottom right;
+    }
+    100%{
+        background-position: bottom left;
+    }
+}
+
+@keyframes bannerText {
+    0%{
+        transform: translateX(-300%)
+    }
+    10%{
+        transform: translateX(0%)
+    }
+    75%{
+        transform: translateX(0%)
+    }
+    85%{
+        transform: translateX(300%)
+    }
+    100%{
+        transform: translateX(300%)
     }
 }
