@@ -42,7 +42,8 @@
             right: 5%;
             color: white;
             text-shadow: 1px 1px 0 $color-primero, 4px 4px 20px $color-segundo;
-            animation: bannerText 10s infinite ease-in-out;
+            animation: bannerText .8s ease-in-out;
+            padding: .4em;
         }
     }
 
@@ -156,18 +157,9 @@
 
 @keyframes bannerText {
     0%{
-        transform: translateX(-300%)
-    }
-    10%{
-        transform: translateX(0%)
-    }
-    75%{
-        transform: translateX(0%)
-    }
-    85%{
-        transform: translateX(300%)
+        transform: translateX(-400%)
     }
     100%{
-        transform: translateX(300%)
+        transform: translateX(0%)
     }
 }
