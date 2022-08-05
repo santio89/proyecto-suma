@@ -11,27 +11,36 @@ const Footer = () => {
                 <span className='row-links'>
                     <div className='col'>
                         <p className='title'>Conocenos</p>
-                        <Link className="btn" to='/about'>
-                            <p className="texto-btn">¿Quiénes somos?</p>
-                        </Link>
+                        <span className='btn-responsive'>
+                            <Link className="btn" to='/about'>
+                                <p className="texto-btn">¿Quiénes somos?</p>
+                            </Link>
+                        </span>
+                        
                     </div>
                     <div className='col'>
                         <p className='title'>Ayuda</p>
-                        <Link className="btn" to='/help'>
-                            <p className="texto-btn">Recepción del pedido</p>
-                        </Link>
-                        <Link className="btn" to='/help'>
-                            <p className="texto-btn">Plazos y costos de envío</p>
-                        </Link>
-                        <Link className="btn" to='/help'>
-                            <p className="texto-btn">Cambios y devoluciones</p>
-                        </Link>
+                        <span className='btn-responsive'>
+                            <Link className="btn" to='/help'>
+                                <p className="texto-btn">Recepción del pedido</p>
+                            </Link>
+                            <Link className="btn" to='/help'>
+                                <p className="texto-btn">Plazos y costos de envío</p>
+                            </Link>
+                            <Link className="btn" to='/help'>
+                                <p className="texto-btn">Cambios y devoluciones</p>
+                            </Link>
+                        </span>
+                        
                     </div>
                     <div className='col'>
                         <p className='title'>Atención al cliente</p>
-                        <p className="texto-btn">Teléfono: 094373344.</p>
-                        <p className="texto-btn">Horario de atención: Lunes a viernes de 10 a 18 hs.</p>
-                        <p className="texto-btn">Montevideo, Uruguay.</p>
+                        <span className='btn-responsive'>
+                            <p className="texto-btn">Teléfono: 094373344.</p>
+                            <p className="texto-btn">Horario de atención: Lunes a viernes de 10 a 18 hs.</p>
+                            <p className="texto-btn">Montevideo, Uruguay.</p>
+                        </span>
+                        
                     </div>
                 </span>
 
@@ -52,6 +61,10 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
+            </div>
+
+            <div className='development'>
+                <p>Desarrollado por </p>
             </div>
         </>
     );

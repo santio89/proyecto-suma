@@ -6,34 +6,94 @@
     justify-content: space-evenly;
     box-shadow: 1px 1px 3px rgba($color: #9b9b9b, $alpha: 0.4);
     margin-bottom: 4%;
+    
 
     .link-logo {
-        width: 16%;
+        width: fit-content;
 
         .logo-btn {
-            font-size: 6em;
             font-weight: bold;
         }
     }
 
     .links {
         display: flex;
-        width: 40%;
         justify-content: space-between;
 
         .link-btn {
             text-align: center;
         
-            .btn {
-                font-size: 1.1em;
-    
-                .titulo-btn {
-                    font-weight: bold;
-                }
+            .titulo-btn {
+                font-weight: bold;
             }
         }
-    }
+    }   
 
     
 }
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        padding: 4% 0;
+
+        .logo-btn {
+            font-size: 1.8em;
+        }
+    
+        .links {
+            width: 60%;
+    
+            .btn {
+                font-size: 0.6em;
+            }
+        }
+    }  
+}
+
+@media only screen and (max-width: 766px) and (min-width: 577px) {
+    .logo-btn {
+        font-size: 4em;
+    }
+
+    .links {
+        width: 46%;
+
+        .btn {
+            font-size: 0.8em;
+        }
+    } 
+}
+
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+    .logo-btn {
+        font-size: 5em;
+    }
+
+    .links {
+        width: 40%;
+
+        .btn {
+            font-size: 0.9em;
+        }
+    }   
+}
+
+@media only screen and (min-width: 993px) {
+    .logo-btn {
+        font-size: 6em;
+    }
+
+    .links {
+        width: 40%;
+
+        .btn {
+            font-size: 1.1em;
+        }
+    }   
+}
+
+
+
+
+
 

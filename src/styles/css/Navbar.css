@@ -8,23 +8,68 @@
   margin-bottom: 4%;
 }
 .navbar .link-logo {
-  width: 16%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .navbar .link-logo .logo-btn {
-  font-size: 6em;
   font-weight: bold;
 }
 .navbar .links {
   display: flex;
-  width: 40%;
   justify-content: space-between;
 }
 .navbar .links .link-btn {
   text-align: center;
 }
-.navbar .links .link-btn .btn {
-  font-size: 1.1em;
-}
-.navbar .links .link-btn .btn .titulo-btn {
+.navbar .links .link-btn .titulo-btn {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    padding: 4% 0;
+  }
+  .navbar .logo-btn {
+    font-size: 1.8em;
+  }
+  .navbar .links {
+    width: 60%;
+  }
+  .navbar .links .btn {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (max-width: 766px) and (min-width: 577px) {
+  .logo-btn {
+    font-size: 4em;
+  }
+  .links {
+    width: 46%;
+  }
+  .links .btn {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+  .logo-btn {
+    font-size: 5em;
+  }
+  .links {
+    width: 40%;
+  }
+  .links .btn {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .logo-btn {
+    font-size: 6em;
+  }
+  .links {
+    width: 40%;
+  }
+  .links .btn {
+    font-size: 1.1em;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
