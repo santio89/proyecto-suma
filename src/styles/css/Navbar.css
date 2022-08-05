@@ -1,25 +1,30 @@
 .navbar {
-  font-family: "century gothic";
   width: 100%;
-  margin: 3% 0;
+  padding: 1.4% 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 3px rgba(155, 155, 155, 0.4);
+  margin-bottom: 4%;
 }
 .navbar .link-logo {
-  width: 30%;
+  width: 16%;
 }
 .navbar .link-logo .logo-btn {
-  font-size: 4em;
+  font-size: 6em;
   font-weight: bold;
 }
-.navbar .link-btn {
-  width: 15%;
+.navbar .links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.navbar .links .link-btn {
   text-align: center;
 }
-.navbar .link-btn .btn {
-  font-size: 0.9em;
+.navbar .links .link-btn .btn {
+  font-size: 1.1em;
 }
-.navbar .link-btn .btn .titulo-btn {
+.navbar .links .link-btn .btn .titulo-btn {
   font-weight: bold;
 }/*# sourceMappingURL=Navbar.css.map */

@@ -1,31 +1,39 @@
 .navbar {
-    font-family: 'century gothic';
     width: 100%;
-    margin: 3% 0;
+    padding: 1.4% 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 3px rgba($color: #9b9b9b, $alpha: 0.4);
+    margin-bottom: 4%;
 
     .link-logo {
-        width: 30%;
+        width: 16%;
 
         .logo-btn {
-            font-size: 4em;
+            font-size: 6em;
             font-weight: bold;
         }
     }
 
-    .link-btn {
-        width: 15%;
-        text-align: center;
-    
-        .btn {
-            font-size: 0.9em;
+    .links {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
 
-            .titulo-btn {
-                font-weight: bold;
+        .link-btn {
+            text-align: center;
+        
+            .btn {
+                font-size: 1.1em;
+    
+                .titulo-btn {
+                    font-weight: bold;
+                }
             }
         }
     }
+
+    
 }
 
