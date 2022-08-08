@@ -4,13 +4,13 @@ import '../styles/css/Footer.css';
 const Footer = () => {
 
     return (
-        <>
+        <section>
             <div className='divider'></div>
 
             <div className="footer">
-                <span className='row-links'>
-                    <div className='col'>
-                        <p className='title'>Conocenos</p>
+                <span className='row-links-footer'>
+                    <div className='col-footer'>
+                        <p className='title-footer'>Conocenos</p>
                         <span className='btn-responsive'>
                             <Link className="btn" to='/about'>
                                 <p className="texto-btn">¿Quiénes somos?</p>
@@ -18,23 +18,23 @@ const Footer = () => {
                         </span>
                         
                     </div>
-                    <div className='col'>
-                        <p className='title'>Ayuda</p>
+                    <div className='col-footer'>
+                        <p className='title-footer'>Ayuda</p>
                         <span className='btn-responsive'>
-                            <Link className="btn" to='/help'>
+                            <Link className="btn" to='/help/reception'>
                                 <p className="texto-btn">Recepción del pedido</p>
                             </Link>
-                            <Link className="btn" to='/help'>
+                            <Link className="btn" to='/help/shipping'>
                                 <p className="texto-btn">Plazos y costos de envío</p>
                             </Link>
-                            <Link className="btn" to='/help'>
+                            <Link className="btn" to='/help/return'>
                                 <p className="texto-btn">Cambios y devoluciones</p>
                             </Link>
                         </span>
                         
                     </div>
-                    <div className='col'>
-                        <p className='title'>Atención al cliente</p>
+                    <div className='col-footer'>
+                        <p className='title-footer'>Atención al cliente</p>
                         <span className='btn-responsive'>
                             <p className="texto-btn">Teléfono: 094373344.</p>
                             <p className="texto-btn">Horario de atención: Lunes a viernes de 10 a 18 hs.</p>
@@ -45,7 +45,7 @@ const Footer = () => {
                 </span>
 
                 <div className='col-rrss'>
-                    <p className='title'>Seguinos en nuestras redes</p>
+                    <p className='title-footer'>Seguinos en nuestras redes</p>
                     <div className='container-rrss'>
                         <Link className="btn" to=''>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg' alt='Logo de Instagram' className='logos-rrss'/>
@@ -66,7 +66,7 @@ const Footer = () => {
             <div className='development'>
                 <p>Desarrollado por </p>
             </div>
-        </>
+        </section>
     );
 };
 

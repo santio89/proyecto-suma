@@ -17,7 +17,7 @@ export default function Home() {
                         <div className='home__categories__card__info__text'>
                             <p>Primera Puesta<br />0 a 12 meses</p>
                         </div>
-                        <Link to="/primera" className='home__categories__card__info__btn'>
+                        <Link to="/primeraPuesta" className='home__categories__card__info__btn'>
                             Ver más
                         </Link>
                     </div>

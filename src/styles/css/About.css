@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 11em;
+}
+
+.row, .row-btn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.row .title, .row-btn .title {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.row .col, .row-btn .col {
+  text-align: justify;
+}
+.row .text, .row-btn .text {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+.row-btn {
+  justify-content: center;
+}
+.row-btn .btn-volver {
+  margin-top: 5em;
+  color: #ffffff;
+  background: #731620;
+  padding: 0.2em 1.8em;
+  border-radius: 0.4em;
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    margin: 2em;
+  }
+  .row .title, .row-btn .title {
+    font-size: 1.1em;
+  }
+  .row .text, .row-btn .text {
+    font-size: 0.8em;
+  }
+  .btn-volver {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 766px) and (min-width: 577px) {
+  .container {
+    margin: 2em 3em;
+  }
+  .row .title, .row-btn .title {
+    font-size: 1.2em;
+  }
+  .row .text, .row-btn .text {
+    font-size: 0.9em;
+  }
+  .btn-volver {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+  .container {
+    margin: 2em 5em;
+  }
+  .row .title, .row-btn .title {
+    font-size: 1.4em;
+  }
+  .row .text, .row-btn .text {
+    font-size: 1em;
+  }
+  .btn-volver {
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=About.css.map */
