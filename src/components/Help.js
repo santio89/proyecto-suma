@@ -17,7 +17,7 @@ const Help = () => {
     }
 
     return (
-        <section>
+        <section className='section-full help'>
             <div className='container'>
                 <div className='row'>
                     <div>
@@ -26,18 +26,18 @@ const Help = () => {
                 </div>
                 <div className='row-links'>
                     <div className='col'>
-                        <button onClick={() => modifyTab('reception')} className={activeTab === 'reception' ? 'btn-active' : ''}>
-                            <h3>Recepción del pedido</h3>
+                        <button onClick={() => modifyTab('reception')}>
+                            <h3  className={activeTab === 'reception' ? 'btn-active' : ''}>Recepción del pedido</h3>
                         </button>
                     </div>
                     <div className='col'>
-                        <button onClick={() => modifyTab('shipping')} className={activeTab === 'shipping' ? 'btn-active' : ''}>
-                            <h3>Plazos y costos de envío</h3>
+                        <button onClick={() => modifyTab('shipping')}>
+                            <h3 className={activeTab === 'shipping' ? 'btn-active' : ''}>Plazos y costos de envío</h3>
                         </button>
                     </div>
                     <div className='col'>
-                        <button onClick={() => modifyTab('return')} className={activeTab === 'return' ? 'btn-active' : ''}>
-                            <h3>Cambios y devoluciones</h3>
+                        <button onClick={() => modifyTab('return')}>
+                            <h3 className={activeTab === 'return' ? 'btn-active' : ''}>Cambios y devoluciones</h3>
                         </button>
                     </div>
                 </div>

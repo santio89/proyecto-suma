@@ -40,7 +40,7 @@
   bottom: 15%;
   right: 5%;
   color: white;
-  text-shadow: 1px 1px 0 #731620, 4px 4px 20px #ffffff;
+  text-shadow: 1px 1px 0 --color-primero, 4px 4px 20px --color-segundo;
   -webkit-animation: bannerText 0.8s ease-in-out;
           animation: bannerText 0.8s ease-in-out;
   padding: 0.4em;
@@ -87,11 +87,11 @@
   line-height: 1.4;
 }
 .home__categories__card__info__text {
-  color: #000000;
+  color: --color-tercero;
 }
 .home__categories__card__info__btn {
-  color: #ffffff;
-  background: #731620;
+  color: --color-segundo;
+  background: --color-primero;
   padding: 0.2em 1.8em;
   border-radius: 0.4em;
   display: flex;
@@ -154,16 +154,20 @@
 @-webkit-keyframes bannerText {
   0% {
     transform: translateX(-400%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 @keyframes bannerText {
   0% {
     transform: translateX(-400%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0%);
+    opacity: 1;
   }
 }/*# sourceMappingURL=Home.css.map */

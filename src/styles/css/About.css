@@ -27,8 +27,8 @@
 }
 .row-btn .btn-volver {
   margin-top: 5em;
-  color: #ffffff;
-  background: #731620;
+  color: --color-segundo;
+  background: --color-primero;
   padding: 0.2em 1.8em;
   border-radius: 0.4em;
 }

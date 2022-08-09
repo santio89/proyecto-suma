@@ -40,7 +40,7 @@
             bottom: 15%;
             right: 5%;
             color: white;
-            text-shadow: 1px 1px 0 $color-primero, 4px 4px 20px $color-segundo;
+            text-shadow: 1px 1px 0 --color-primero, 4px 4px 20px --color-segundo;
             animation: bannerText .8s ease-in-out;
             padding: .4em;
         }
@@ -89,12 +89,12 @@
                 line-height: 1.4;
 
                 &__text{
-                    color: $color-tercero
+                    color: --color-tercero
                 }
 
                 &__btn{
-                    color: $color-segundo;
-                    background: $color-primero;
+                    color: --color-segundo;
+                    background: --color-primero;
                     padding: .2em 1.8em;
                     border-radius: .4em;
                     display: flex;
@@ -155,9 +155,11 @@
 
 @keyframes bannerText {
     0%{
-        transform: translateX(-400%)
+        transform: translateX(-400%);
+        opacity: 0;
     }
     100%{
-        transform: translateX(0%)
+        transform: translateX(0%);
+        opacity: 1;
     }
 }

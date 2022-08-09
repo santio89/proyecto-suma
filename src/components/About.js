@@ -4,7 +4,7 @@ import '../styles/css/About.css';
 const About = () => {
 
     return (
-        <section>
+        <section className='section-full about'>
             <div className='container'>
                 <div className='row'>
                     <div>

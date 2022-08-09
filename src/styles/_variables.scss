@@ -1,3 +1,14 @@
-$color-primero: #731620;
-$color-segundo: #ffffff;
-$color-tercero: #000000;
+$color-red: #731620;
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+$font-sm: 1rem;
+$font-md: 1.5rem;
+$font-lg: 2rem;
+$font-xl: 2.5rem;
+
+$font-fluid-sm: clamp(1rem, 1rem + 1vw, 1.5rem);
+$font-fluid-md: clamp(1.5rem, 1.5rem + 1vw, 2rem);
+$font-fluid-lg: clamp(2rem, 2rem + 1vw, 3rem);
+$font-fluid-xl: clamp(2.5rem, 2.5rem + 1vw, 4rem);
