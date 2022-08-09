@@ -1,10 +1,10 @@
 :root {
-  --color-primero: $color-red;
-  --color-segundo: $color-white;
-  --color-tercero: $color-black;
-  --font-title: $font-fluid-lg;
-  --font-subt: $font-fluid-md;
-  --font-p: $font-md;
+  --color-primero: #731620;
+  --color-segundo: #ffffff;
+  --color-tercero: #000000;
+  --font-title: clamp(2rem, 2rem + 1vw, 3rem);
+  --font-subt: clamp(1.2rem, 1.2rem + 1vw, 2rem);
+  --font-p: 1.2rem;
 }
 
 .section-full {
@@ -12,6 +12,6 @@
   min-height: 60vh;
   padding: 1rem 4rem;
   padding: clamp(0.1rem, 0.1rem + 1vw, 1rem) clamp(0.4rem, 0.4rem + 1vw, 4rem);
-  max-width: 1800px;
+  max-width: 1400px;
   margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */

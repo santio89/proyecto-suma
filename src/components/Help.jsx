@@ -17,7 +17,7 @@ const Help = () => {
     }
 
     return (
-        <section className='section-full help'>
+        <section className='section-full'>
             <div className='container'>
                 <div className='row'>
                     <div>

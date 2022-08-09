@@ -40,7 +40,7 @@
             bottom: 15%;
             right: 5%;
             color: white;
-            text-shadow: 1px 1px 0 --color-primero, 4px 4px 20px --color-segundo;
+            text-shadow: 1px 1px 0 var(--color-primero), 4px 4px 20px var(--color-segundo);
             animation: bannerText .8s ease-in-out;
             padding: .4em;
         }
@@ -89,13 +89,13 @@
                 line-height: 1.4;
 
                 &__text{
-                    color: --color-tercero
+                    color: var(--color-tercero)
                 }
 
                 &__btn{
-                    color: --color-segundo;
-                    background: --color-primero;
-                    padding: .2em 1.8em;
+                    color: var(--color-segundo);
+                    background: var(--color-primero);
+                    padding: .4em 1.8em;
                     border-radius: .4em;
                     display: flex;
                     justify-content: center;
@@ -155,7 +155,7 @@
 
 @keyframes bannerText {
     0%{
-        transform: translateX(-400%);
+        transform: translateX(120%);
         opacity: 0;
     }
     100%{

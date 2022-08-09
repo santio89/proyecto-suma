@@ -1,0 +1,20 @@
+.producto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+}
+.producto__imgContainer {
+  width: 100%;
+}
+.producto__imgContainer img {
+  aspect-ratio: 1;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.8em;
+}
+.producto__info {
+  font-size: var(--font-p);
+  padding: 0.2em;
+}/*# sourceMappingURL=Producto.css.map */

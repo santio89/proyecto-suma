@@ -1,0 +1,25 @@
+.galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.galeria__productos {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: clamp(1rem, 1rem + 1vw, 4rem);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  font-size: 1rem;
+}
+
+.btn-volver {
+  font-size: 1.2em;
+  color: var(--color-segundo);
+  background: var(--color-primero);
+  padding: 0.4em 1.8em;
+  border-radius: 0.4em;
+  text-align: center;
+  margin-top: 5em;
+}/*# sourceMappingURL=Galeria.css.map */

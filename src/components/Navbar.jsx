@@ -12,7 +12,7 @@ const Navbar = () => {
             </div>
             <div className='links'>
                 <div className='link-btn'>
-                    <Link className="btn" to='/primeraPuesta'>
+                    <Link className="btn" to='/primera'>
                         <p className="titulo-btn">PRIMERA PUESTA</p>
                         <p>0 A 12 MESES</p>
                     </Link>

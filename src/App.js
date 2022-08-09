@@ -5,6 +5,9 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Help from './components/Help';
+import PrimeraPuesta from './components/PrimeraPuesta';
+import Bebes from './components/Bebes';
+import Nenes from './components/Nenes';
 
 function App() {
   return (
@@ -12,21 +15,21 @@ function App() {
       {/* CONTEXT (SI USAMOS) */}
 
       <BrowserRouter>
-        <Navbar/>
+        <Navbar />
 
         <Routes>
           <Route path='/' element={<Home />} />
-       {/*    <Route path='/primera' element={<PrimeraPuesta />} />
+          <Route path='/primera' element={<PrimeraPuesta />} />
           <Route path='/bebes' element={<Bebes />} />
           <Route path='/nenes' element={<Nenes />} />
-          
-          
-          <Route path="/*" element={<Error404 />} /> */}
+
+
+          {/*  <Route path="/*" element={<Error404 />} /> */}
           <Route path='/about' element={<About />} />
           <Route path='/help/:helpSection' element={<Help />} />
         </Routes>
 
-        <Footer /> 
+        <Footer />
       </BrowserRouter>
 
 
