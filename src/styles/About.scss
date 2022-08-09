@@ -3,7 +3,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin: 2em 11em;
+    margin: clamp(1em, 1em + .8vw, 4em) clamp(.4em, .4em + .2vw, 1em);
 }
 
 .row, .row-btn {
@@ -41,10 +41,6 @@
 
 
 @media only screen and (max-width: 576px) {
-    .container {
-        margin: 2em;
-    }
-
     .row, .row-btn {
     
         .title {
@@ -62,10 +58,6 @@
 }
 
 @media only screen and (max-width: 766px) and (min-width: 577px) {
-    .container {
-        margin: 2em 3em;
-    }
-
     .row, .row-btn {
     
         .title {
@@ -83,10 +75,6 @@
 }
 
 @media only screen and (max-width: 992px) and (min-width: 767px) {
-    .container {
-        margin: 2em 5em;
-    }
-
     .row, .row-btn {
     
         .title {
