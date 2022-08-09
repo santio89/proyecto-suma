@@ -3,7 +3,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin: 2em 11em;
+    margin: clamp(1em, 1em + .8vw, 4em) clamp(.4em, .4em + .2vw, 1em);
 }
 
 .inactive {
@@ -83,10 +83,6 @@
 
 
 @media only screen and (max-width: 576px) {
-    .container {
-        margin: 2em 1.7em;
-    }
-
     .row, .row-btn, .row-links {
     
         .title {
@@ -123,10 +119,6 @@
 }
 
 @media only screen and (max-width: 766px) and (min-width: 577px) {
-    .container {
-        margin: 2em 3em;
-    }
-
     .row, .row-btn, .row-links {
     
         .title {
@@ -163,10 +155,6 @@
 }
 
 @media only screen and (max-width: 992px) and (min-width: 767px) {
-    .container {
-        margin: 2em 4.5em;
-    }
-
     .row, .row-btn, .row-links {
     
         .title {
@@ -204,10 +192,6 @@
 
 
 @media only screen and (max-width: 1298px) and (min-width: 993px) {
-    .container {
-        margin: 2em 4.5em;
-    }
-
     .row-links {
         gap: 3em;  
         margin-bottom: 1em;
