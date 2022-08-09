@@ -11,6 +11,10 @@ const Help = () => {
         setActiveTab(location.pathname.split('/')[2])
     }, [location])
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const modifyTab = (tabName) => {
         setActiveTab(tabName);
         navigate(`/help/${tabName}`);

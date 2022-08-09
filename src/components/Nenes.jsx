@@ -8,7 +8,6 @@ export default function Nenes() {
     useEffect(() => {
         /* aca podria ir un fetch para traer los productos de algun lado */
         setProductos([{ nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}, { nombre: "test nombre", url: "https://picsum.photos/900/900"}]);
-
     }, [])
 
     return (

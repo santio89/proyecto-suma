@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import '../styles/css/Navbar.css';
+import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -12,22 +13,22 @@ const Navbar = () => {
             </div>
             <div className='links'>
                 <div className='link-btn'>
-                    <Link className="btn" to='/primera'>
+                    <NavLink className="btn" to='/primera'>
                         <p className="titulo-btn">PRIMERA PUESTA</p>
                         <p>0 A 12 MESES</p>
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className='link-btn'>
-                    <Link className="btn" to='/bebes'>
+                    <NavLink className="btn" to='/bebes'>
                         <p className="titulo-btn">BEBÉS</p>
                         <p>6 A 24 MESES</p>
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className='link-btn'>
-                    <Link className="btn" to='/nenes'>
+                    <NavLink className="btn" to='/nenes'>
                         <p className="titulo-btn">NIÑOS</p>
                         <p>2 A 10 AÑOS</p>
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
         </div>

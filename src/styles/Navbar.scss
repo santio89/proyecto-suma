@@ -14,6 +14,10 @@
         .logo-btn {
             font-weight: bold;
         }
+
+        &.active{
+            text-shadow: inherit;
+        }
     }
 
     .links {
@@ -27,9 +31,18 @@
                 font-weight: bold;
             }
         }
+
+        a{
+            transition: color 200ms;
+        }
     }   
 
     
+}
+
+.active{
+    color: var(--color-primero);
+    text-shadow: 0 0 50px var(--color-primero), 0 0 25px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
 }
 
 @media only screen and (max-width: 576px) {
