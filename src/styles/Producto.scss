@@ -17,7 +17,8 @@
             border-radius: 1.8em;
         }
 
-        &:hover + .producto__expand, &:focus-visible + .producto__expand{
+        &:hover+.producto__expand,
+        &:focus-visible+.producto__expand {
             visibility: visible;
         }
     }
@@ -75,6 +76,12 @@
         right: 4%;
         color: var(--color-segundo);
         text-shadow: 2px 2px 0 var(--color-tercero);
+        cursor: pointer;
         visibility: hidden;
+
+        &:hover,
+        &:focus-visible {
+            visibility: visible;
+        }
     }
 }

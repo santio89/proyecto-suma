@@ -71,5 +71,9 @@
   right: 4%;
   color: var(--color-segundo);
   text-shadow: 2px 2px 0 var(--color-tercero);
+  cursor: pointer;
   visibility: hidden;
+}
+.producto__expand:hover, .producto__expand:focus-visible {
+  visibility: visible;
 }/*# sourceMappingURL=Producto.css.map */
