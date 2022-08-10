@@ -15,7 +15,7 @@
             font-weight: bold;
         }
 
-        &.active{
+        &.active {
             text-shadow: inherit;
         }
     }
@@ -26,21 +26,26 @@
 
         .link-btn {
             text-align: center;
-        
+
             .titulo-btn {
                 font-weight: bold;
             }
         }
 
-        a{
+        a {
             transition: color 200ms;
-        }
-    }   
 
-    
+            &:focus-visible {
+                color: var(--color-primero);
+                text-shadow: 0 0 50px var(--color-primero), 0 0 25px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
+            }
+        }
+    }
+
+
 }
 
-.active{
+.active {
     color: var(--color-primero);
     text-shadow: 0 0 50px var(--color-primero), 0 0 25px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
 }
@@ -52,15 +57,15 @@
         .logo-btn {
             font-size: 1.8em;
         }
-    
+
         .links {
             width: 60%;
-    
+
             .btn {
                 font-size: 0.6em;
             }
         }
-    }  
+    }
 }
 
 @media only screen and (max-width: 766px) and (min-width: 577px) {
@@ -74,7 +79,7 @@
         .btn {
             font-size: 0.8em;
         }
-    } 
+    }
 }
 
 @media only screen and (max-width: 992px) and (min-width: 767px) {
@@ -88,7 +93,7 @@
         .btn {
             font-size: 0.9em;
         }
-    }   
+    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -102,11 +107,5 @@
         .btn {
             font-size: 1.1em;
         }
-    }   
+    }
 }
-
-
-
-
-
-
