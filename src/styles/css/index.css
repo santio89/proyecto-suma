@@ -1,9 +1,10 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 :root {
   --color-primero: #731620;
   --color-segundo: #ffffff;
-  --color-tercero: #000000;
-  --font-title: clamp(2rem, 2rem + 1vw, 3rem);
-  --font-subt: clamp(1.2rem, 1.2rem + 1vw, 2rem);
+  --color-tercero: #141414;
+  --font-title: clamp(1.8rem, 2rem + 1vw, 2.4rem);
+  --font-subt: clamp(1.2rem, 1.2rem + 1vw, 1.8rem);
   --font-p: 1.2rem;
 }
 

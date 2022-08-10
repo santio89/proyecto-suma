@@ -6,6 +6,7 @@
   justify-content: space-evenly;
   box-shadow: 1px 1px 3px rgba(155, 155, 155, 0.4);
   margin-bottom: clamp(2rem, 2rem + 1vw, 4rem);
+  color: var(--color-tercero);
 }
 .navbar .link-logo {
   width: -webkit-fit-content;

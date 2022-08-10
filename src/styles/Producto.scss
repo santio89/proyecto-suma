@@ -1,24 +1,80 @@
 @import './variables';
 
-.producto{
+.producto {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: start;
+    position: relative;
 
-    &__imgContainer{
+    &__imgContainer {
         width: 100%;
 
-        img{
+        img {
             aspect-ratio: 1;
             width: 100%;
             object-fit: cover;
             border-radius: 1.8em;
         }
+
+        &:hover + .producto__expand, &:focus-visible + .producto__expand{
+            visibility: visible;
+        }
     }
 
-    &__info{
+    &__info {
         font-size: var(--font-p);
         padding: .2em;
+    }
+
+    &__imgModal {
+        margin: auto;
+        width: clamp(300px, 100%, 600px);
+        aspect-ratio: 1;
+        border: none;
+        border-radius: 2em;
+        overflow: hidden;
+        background: var(--color-segundo);
+        box-shadow: 0 0 4px 0 var(--color-segundo);
+        border: 2px solid var(--color-segundo);
+
+        button {
+            color: var(--color-segundo);
+            text-shadow: 2px 2px 0 var(--color-tercero);
+            font-size: $font-fluid-lg;
+            font-weight: bold;
+            position: absolute;
+            top: 1%;
+            right: 4%;
+            transition: 200ms;
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-tercero);
+                text-shadow: 2px 2px 0 var(--color-segundo);
+            }
+        }
+
+        &::backdrop {
+            background: rgba(20, 20, 20, .8);
+            backdrop-filter: blur(2px);
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &__expand {
+        font-size: $font-fluid-md;
+        font-weight: bold;
+        position: absolute;
+        bottom: 14%;
+        right: 4%;
+        color: var(--color-segundo);
+        text-shadow: 2px 2px 0 var(--color-tercero);
+        visibility: hidden;
     }
 }
