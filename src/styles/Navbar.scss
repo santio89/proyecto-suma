@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 1px 1px 3px rgba($color: #9b9b9b, $alpha: 0.4);
-    margin-bottom: 4%;
+    margin-bottom: clamp(2rem, 2rem + 1vw, 4rem);
     
 
     .link-logo {

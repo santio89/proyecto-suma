@@ -6,7 +6,7 @@
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: stretch;
-    gap: 3rem;
+    gap: clamp(3rem, 3rem + 2vw, 6rem);
     margin-bottom: 3.8rem;
 
     &__banner{
