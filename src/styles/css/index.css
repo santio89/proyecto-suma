@@ -12,6 +12,6 @@
   min-height: 60vh;
   padding: 1rem 4rem;
   padding: clamp(0.1rem, 0.1rem + 1vw, 1rem) clamp(0.4rem, 0.4rem + 1vw, 4rem);
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
