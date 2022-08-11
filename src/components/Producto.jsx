@@ -14,7 +14,7 @@ export default function Producto({ nombre, url }) {
                 window.addEventListener("click", modalCloseClick);
                 window.addEventListener("scroll", modalCloseScroll)
             }}><img alt={`img-${nombre}`} src={url} loading="lazy"></img></button>
-            <i class="bi bi-arrows-angle-expand producto__expand"></i>
+            <i className="bi bi-arrows-angle-expand producto__expand"></i>
             <p className='producto__info'>{nombre}</p>
             <dialog className='producto__imgModal' ref={imgModal}>
                 <button onClick={() => { imgModal.current.close() }}>X</button>
