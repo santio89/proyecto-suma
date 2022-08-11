@@ -1,22 +1,43 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 :root {
-  --color-primero: #731620;
-  --color-segundo: #ffffff;
-  --color-tercero: #141414;
-  --font-title: clamp(1.8rem, 2rem + 1vw, 2.4rem);
-  --font-subt: clamp(1.2rem, 1.2rem + 1vw, 1.8rem);
-  --font-p: 1.2rem;
+  /* colores basic */
+  --color-red: #731620;
+  --color-white: #ffffff;
+  --color-black: #141414;
+  /* colores schema*/
+  --color-primero: var(--color-red);
+  --color-segundo: var(--color-white);
+  --color-tercero: var(--color-black);
+  /* font-size basic */
+  --font-xs: .9rem;
+  --font-sm: 1.1rem;
+  --font-md: 1.2rem;
+  --font-lg: 2rem;
+  --font-xl: 2.4rem;
+  --font-fluid-sm: clamp(1rem, 1rem + 1vw, 1.5rem);
+  --font-fluid-md: clamp(1rem, 1rem + 1.4vw, 2rem);
+  --font-fluid-lg: clamp(1.8rem, 2rem + 1vw, 2.4rem);
+  --font-fluid-xl: clamp(2.4rem, 2.4rem + 1vw, 3.4rem);
+  /* font-size schema */
+  --font-title: var(--font-fluid-lg);
+  --font-subt: var(--font-fluid-md);
+  --font-p: var(--font-sm);
+  --font-banner: var(--font-fluid-md) ;
 }
 
 .section-full {
   width: 100%;
   min-height: 60vh;
-  padding: 1rem 4rem;
   padding: clamp(0.1rem, 0.1rem + 1vw, 1rem) clamp(0.4rem, 0.4rem + 1vw, 4rem);
   max-width: 1280px;
   margin: 0 auto;
 }
 
+@media (max-width: 577px) {
+  :root {
+    --font-p: var(--font-xs);
+  }
+}
 @-webkit-keyframes translateFromLeft {
   0% {
     transform: translateX(-200%);
@@ -27,7 +48,6 @@
     opacity: 1;
   }
 }
-
 @keyframes translateFromLeft {
   0% {
     transform: translateX(-200%);
