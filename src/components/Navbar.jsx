@@ -1,11 +1,14 @@
 import '../styles/css/Navbar.css';
 import { Link } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
+import useScrollPosition from '../utils/useScrollPosition';
 
 const Navbar = () => {
 
+    const scrollPosition = useScrollPosition()
+
     return (
-        <div className="navbar">
+        <div className={`navbar ${scrollPosition > 80 && 'scrolled'}`}>
             <div className='link-logo'>
                 <Link className="btn-logo" to='/'>
                     <h1 className="logo-btn">SUMA</h1>

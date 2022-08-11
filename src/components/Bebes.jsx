@@ -11,6 +11,6 @@ export default function Bebes() {
     }, [])
 
     return (
-        <Galeria productos={productos} />
+        <Galeria productos={productos} titulo={"Bebés"} />
     )
 }

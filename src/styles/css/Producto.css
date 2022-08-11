@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: start;
   position: relative;
+  -webkit-animation: opacityStart 1.2s ease-in;
+          animation: opacityStart 1.2s ease-in;
 }
 .producto__imgContainer {
   width: 100%;

@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: start;
     position: relative;
+    animation: opacityStart 1.2s ease-in;
 
     &__imgContainer {
         width: 100%;

@@ -7,6 +7,10 @@
   box-shadow: 1px 1px 3px rgba(155, 155, 155, 0.4);
   margin-bottom: clamp(2rem, 2rem + 1vw, 4rem);
   color: var(--color-tercero);
+  transition: 400ms;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--color-segundo);
 }
 .navbar .link-logo {
   width: -webkit-fit-content;
@@ -15,6 +19,7 @@
 }
 .navbar .link-logo .logo-btn {
   font-weight: bold;
+  transition: 400ms;
 }
 .navbar .link-logo.active {
   text-shadow: inherit;
@@ -29,6 +34,9 @@
 .navbar .links .link-btn .titulo-btn {
   font-weight: bold;
 }
+.navbar .links .link-btn p {
+  transition: 400ms;
+}
 .navbar .links a {
   transition: color 200ms;
 }
@@ -42,12 +50,24 @@
   text-shadow: 0 0 50px var(--color-primero), 0 0 25px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
 }
 
+.scrolled {
+  height: 4rem !important;
+}
+
+.navbar.scrolled .logo-btn {
+  font-size: 2em;
+}
+
 @media only screen and (max-width: 576px) {
   .navbar {
     padding: 4% 0;
+    height: 6rem;
   }
   .navbar .logo-btn {
     font-size: 1.8em;
+  }
+  .navbar .navbar.scrolled .logo-btn {
+    font-size: 1.4em;
   }
   .navbar .links {
     width: 60%;
@@ -55,10 +75,19 @@
   .navbar .links .btn {
     font-size: 0.6em;
   }
+  .section-full {
+    padding-top: 9rem;
+  }
 }
 @media only screen and (max-width: 766px) and (min-width: 577px) {
+  .navbar {
+    height: 7rem;
+  }
   .logo-btn {
     font-size: 4em;
+  }
+  .navbar.scrolled .logo-btn {
+    font-size: 3em;
   }
   .links {
     width: 46%;
@@ -66,10 +95,19 @@
   .links .btn {
     font-size: 0.8em;
   }
+  .section-full {
+    padding-top: 10rem;
+  }
 }
 @media only screen and (max-width: 992px) and (min-width: 767px) {
+  .navbar {
+    height: 9rem;
+  }
   .logo-btn {
     font-size: 5em;
+  }
+  .navbar.scrolled .logo-btn {
+    font-size: 3.8em;
   }
   .links {
     width: 40%;
@@ -77,15 +115,27 @@
   .links .btn {
     font-size: 0.9em;
   }
+  .section-full {
+    padding-top: 12rem;
+  }
 }
 @media only screen and (min-width: 993px) {
+  .navbar {
+    height: 10rem;
+  }
   .logo-btn {
     font-size: 6em;
+  }
+  .navbar.scrolled .logo-btn {
+    font-size: 4.4em;
   }
   .links {
     width: 40%;
   }
   .links .btn {
     font-size: 1.1em;
+  }
+  .section-full {
+    padding-top: 13rem;
   }
 }/*# sourceMappingURL=Navbar.css.map */

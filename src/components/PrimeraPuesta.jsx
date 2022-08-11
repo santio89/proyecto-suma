@@ -11,6 +11,6 @@ export default function PrimeraPuesta() {
     }, [])
 
     return (
-        <Galeria productos={productos} />
+        <Galeria productos={productos} titulo={"Primera puesta"} />
     )
 }

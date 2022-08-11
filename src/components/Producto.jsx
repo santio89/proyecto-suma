@@ -2,10 +2,10 @@ import { useRef } from 'react';
 import '../styles/css/Producto.css'
 
 export default function Producto({ nombre, url }) {
-    const imgModal = useRef();
+    const imgModal = useRef(null);
 
-    const modalCloseClick = (e) => { if (e.target === imgModal.current) { imgModal.current.close(); window.removeEventListener("click", modalCloseClick) } };
-    const modalCloseScroll = () => { imgModal.current.close(); window.removeEventListener("scroll", modalCloseScroll) }
+    const modalCloseClick = (e) => { if (e.target === imgModal.current) { window.removeEventListener("click", modalCloseClick); imgModal.current.close() } };
+    const modalCloseScroll = () => { window.removeEventListener("scroll", modalCloseScroll); imgModal.current.close() }
 
     return (
         <div className='producto'>

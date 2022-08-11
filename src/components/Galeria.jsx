@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../styles/css/Galeria.css'
 import Producto from './Producto'
 
-export default function Galeria({ productos }) {
+export default function Galeria({ productos, titulo }) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -12,6 +12,7 @@ export default function Galeria({ productos }) {
     return (
         <>
             <section className='section-full galeria'>
+                <h2 className='galeria__title'>{titulo}</h2>
                 <div className='galeria__productos'>
                     {productos.map((producto, index) => {
                         return (

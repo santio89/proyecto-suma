@@ -11,6 +11,6 @@ export default function Nenes() {
     }, [])
 
     return (
-        <Galeria productos={productos} />
+        <Galeria productos={productos} titulo={"Niños"} />
     )
 }
