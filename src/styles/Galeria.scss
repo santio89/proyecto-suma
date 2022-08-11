@@ -16,12 +16,11 @@
 
     &__title{
         align-self: start;
-        color: var(--color-tercero);
-        font-weight: 400;
-        text-shadow: 0 0 24px var(--color-primero), 0 0 12px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
+        color: var(--color-primero);
+        font-weight: bold;
         font-size: var(--font-subt);
         animation: translateFromLeft .6s ease-in-out;
-        margin: .2em 0 2em 0;
+        margin-bottom: 2em;
     }
 }
 
