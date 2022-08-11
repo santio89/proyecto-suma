@@ -11,17 +11,18 @@
         align-content: center;
         gap: clamp(1rem, 1rem + 1vw, 4rem);
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        font-size: $font-sm;
+        font-size: var(--font-sm);
     }
 
     &__title{
         align-self: start;
-        margin-bottom: 2em;
         color: var(--color-tercero);
         font-weight: 400;
-        text-shadow: 0 0 50px var(--color-primero), 0 0 25px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
+        text-shadow: 0 0 24px var(--color-primero), 0 0 12px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
         font-size: var(--font-subt);
+        font-weight: bold;
         animation: translateFromLeft .6s ease-in-out;
+        margin: .2em 0 2em 0;
     }
 }
 

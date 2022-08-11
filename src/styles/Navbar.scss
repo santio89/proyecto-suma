@@ -7,9 +7,9 @@
     color: var(--color-tercero);
     transition: 400ms;
     position: fixed;
-    z-index: 1;
     background-color: var(--color-segundo);
     overflow: hidden;
+    z-index: 1;
 
     .link-logo {
         width: fit-content;
