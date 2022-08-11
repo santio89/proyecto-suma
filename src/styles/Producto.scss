@@ -5,6 +5,7 @@
     align-items: start;
     position: relative;
     animation: opacityStart 1.2s ease-in;
+    max-width: 340px;
 
     &__imgContainer {
         width: 100%;
@@ -41,7 +42,7 @@
         button {
             color: var(--color-segundo);
             text-shadow: 2px 2px 0 var(--color-tercero);
-            font-size: $font-fluid-lg;
+            font-size: var(--font-fluid-lg);
             font-weight: bold;
             position: absolute;
             top: 1%;
@@ -68,17 +69,15 @@
     }
 
     &__expand {
-        font-size: $font-fluid-md;
-        font-weight: bold;
         position: absolute;
         bottom: 14%;
         right: 4%;
         color: var(--color-segundo);
-        text-shadow: 2px 2px 0 var(--color-tercero);
+        filter: drop-shadow(2px 2px 0 var(--color-tercero));
         cursor: pointer;
         pointer-events: none;
         visibility: hidden;
-
+        
         &:hover,
         &:focus-visible {
             visibility: visible;

@@ -7,8 +7,8 @@
     &__productos{
         width: 100%;
         display: grid;
-        justify-content: center;
-        align-content: center;
+        place-content: center;
+        place-items: center;
         gap: clamp(1rem, 1rem + 1vw, 4rem);
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         font-size: var(--font-sm);

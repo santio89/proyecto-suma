@@ -6,6 +6,7 @@
   position: relative;
   -webkit-animation: opacityStart 1.2s ease-in;
           animation: opacityStart 1.2s ease-in;
+  max-width: 340px;
 }
 .producto__imgContainer {
   width: 100%;
@@ -38,7 +39,7 @@
 .producto__imgModal button {
   color: var(--color-segundo);
   text-shadow: 2px 2px 0 var(--color-tercero);
-  font-size: clamp(1.8rem, 2rem + 1vw, 2.4rem);
+  font-size: var(--font-fluid-lg);
   font-weight: bold;
   position: absolute;
   top: 1%;
@@ -66,13 +67,11 @@
   border-radius: inherit;
 }
 .producto__expand {
-  font-size: clamp(1.2rem, 1.2rem + 1vw, 1.8rem);
-  font-weight: bold;
   position: absolute;
   bottom: 14%;
   right: 4%;
   color: var(--color-segundo);
-  text-shadow: 2px 2px 0 var(--color-tercero);
+  filter: drop-shadow(2px 2px 0 var(--color-tercero));
   cursor: pointer;
   pointer-events: none;
   visibility: hidden;

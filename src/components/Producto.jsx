@@ -14,7 +14,10 @@ export default function Producto({ nombre, url }) {
                 window.addEventListener("click", modalCloseClick);
                 window.addEventListener("scroll", modalCloseScroll)
             }}><img alt={`img-${nombre}`} src={url} loading="lazy"></img></button>
-            <i className="bi bi-arrows-angle-expand producto__expand"></i>
+          
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="producto__expand" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z" />
+            </svg>
             <p className='producto__info'>{nombre}</p>
             <dialog className='producto__imgModal' ref={imgModal}>
                 <button onClick={() => { imgModal.current.close() }}>X</button>
