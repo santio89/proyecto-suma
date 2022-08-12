@@ -15,20 +15,19 @@
     --font-smm: 1.28rem;
     --font-md: 1.4rem;
     --font-lg: 2rem;
-    --font-xl: 2.4rem;  
+    --font-xl: 2.4rem;
     --font-fluid-sm: clamp(1rem, 1rem + 1vw, 1.5rem);
     --font-fluid-md: clamp(1rem, 1rem + 1.4vw, 1.8rem);
     --font-fluid-lg: clamp(1.8rem, 2rem + 1vw, 2.4rem);
     --font-fluid-xl: clamp(2.4rem, 2.4rem + 1vw, 3.4rem);
 
     /* font-size schema */
-    --font-banner: var(--font-fluid-md)
-    --font-title: var(--font-fluid-lg);
+    --font-banner: var(--font-fluid-md) --font-title: var(--font-fluid-lg);
     --font-subt: var(--font-fluid-md);
     --font-p: var(--font-sm);
 }
 
-body{
+body {
     font-family: 'century gothic', sans-serif;
 }
 
@@ -40,13 +39,32 @@ body{
     margin: 0 auto;
 }
 
-@media (max-width: 577px){
-    :root{
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--color-primero);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation .8s linear infinite;
+}
+
+@media (max-width: 577px) {
+    :root {
         --font-p: var(--font-xs);
     }
 }
 
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes translateFromLeft {
     0% {

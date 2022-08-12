@@ -19,8 +19,7 @@
   --font-fluid-lg: clamp(1.8rem, 2rem + 1vw, 2.4rem);
   --font-fluid-xl: clamp(2.4rem, 2.4rem + 1vw, 3.4rem);
   /* font-size schema */
-  --font-banner: var(--font-fluid-md)
-  --font-title: var(--font-fluid-lg);
+  --font-banner: var(--font-fluid-md) --font-title: var(--font-fluid-lg);
   --font-subt: var(--font-fluid-md);
   --font-p: var(--font-sm);
 }
@@ -37,9 +36,37 @@ body {
   margin: 0 auto;
 }
 
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--color-primero);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-animation: rotation 0.8s linear infinite;
+          animation: rotation 0.8s linear infinite;
+}
+
 @media (max-width: 577px) {
   :root {
     --font-p: var(--font-xs);
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes translateFromLeft {

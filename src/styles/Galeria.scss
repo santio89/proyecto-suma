@@ -5,7 +5,7 @@
     align-items: center;
     min-height: 80vh;
 
-    &__productos{
+    &__productos {
         width: 100%;
         display: grid;
         place-content: center;
@@ -16,7 +16,7 @@
         min-height: inherit;
     }
 
-    &__title{
+    &__title {
         align-self: start;
         color: var(--color-primero);
         font-weight: bold;

@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/css/Galeria.css'
 import Producto from './Producto'
-import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Galeria({ productos, titulo }) {
 
@@ -14,7 +13,7 @@ export default function Galeria({ productos, titulo }) {
         <>
             <section className='section-full galeria'>
                 <h2 className='galeria__title'>{titulo}</h2>
-                {productos.length === 0 && <ClipLoader color="var(--color-primero)"/>}
+                {productos.length === 0 && <span class="loader"></span>}
                 <div className='galeria__productos'>
                     {productos.map((producto, index) => {
                         return (
