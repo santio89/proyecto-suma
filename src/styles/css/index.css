@@ -25,6 +25,26 @@
   --font-p: var(--font-sm);
 }
 
+html {
+  /* INICIO SCROLLBAR */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-tercero) var(--color-segundo);
+  /* width */
+  /* track */
+  /* handle */
+  /* FIN SCROLLBAR */
+}
+html ::-webkit-scrollbar {
+  width: 6px;
+}
+html ::-webkit-scrollbar-track {
+  background: var(--color-segundo);
+}
+html ::-webkit-scrollbar-thumb {
+  background: var(--color-tercero);
+  border-radius: 12px;
+}
+
 body {
   font-family: "century gothic", sans-serif;
 }

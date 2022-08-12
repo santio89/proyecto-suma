@@ -28,6 +28,31 @@
     --font-p: var(--font-sm);
 }
 
+html {
+    /* INICIO SCROLLBAR */
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-tercero) var(--color-segundo);
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* track */
+    ::-webkit-scrollbar-track {
+        background: var(--color-segundo);
+    }
+
+    /* handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-tercero);
+        border-radius: 12px;
+    }
+
+    /* FIN SCROLLBAR */
+}
+
 body {
     font-family: 'century gothic', sans-serif;
 }
