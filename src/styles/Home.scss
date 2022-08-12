@@ -10,7 +10,8 @@
 
     &__banner {
         width: 100%;
-        height: clamp(240px, 30vh, 340px);
+        aspect-ratio: 3.8;
+        min-height: 180px;
         font-size: var(--font-banner);
         font-weight: bold;
         font-style: italic;
