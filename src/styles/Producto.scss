@@ -6,6 +6,7 @@
     position: relative;
     animation: opacityStart 1.2s ease-in;
     max-width: 340px;
+    color: var(--color-tercero);
 
     &__imgContainer {
         width: 100%;
@@ -70,8 +71,8 @@
 
     &__expand {
         position: absolute;
-        bottom: 14%;
-        right: 4%;
+        bottom: 24%;
+        right: 6%;
         color: var(--color-segundo);
         filter: drop-shadow(2px 2px 0 var(--color-tercero));
         cursor: pointer;
@@ -82,5 +83,14 @@
         &:focus-visible {
             visibility: visible;
         }
+    }
+
+    &__rotate{
+        align-self: end;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: .1em;
+        margin: -1em .2em .2em 0;
+        color: var(--color-tercero);
     }
 }

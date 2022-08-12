@@ -7,6 +7,7 @@
   -webkit-animation: opacityStart 1.2s ease-in;
           animation: opacityStart 1.2s ease-in;
   max-width: 340px;
+  color: var(--color-tercero);
 }
 .producto__imgContainer {
   width: 100%;
@@ -68,8 +69,8 @@
 }
 .producto__expand {
   position: absolute;
-  bottom: 14%;
-  right: 4%;
+  bottom: 24%;
+  right: 6%;
   color: var(--color-segundo);
   filter: drop-shadow(2px 2px 0 var(--color-tercero));
   cursor: pointer;
@@ -78,4 +79,12 @@
 }
 .producto__expand:hover, .producto__expand:focus-visible {
   visibility: visible;
+}
+.producto__rotate {
+  align-self: end;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.1em;
+  margin: -1em 0.2em 0.2em 0;
+  color: var(--color-tercero);
 }/*# sourceMappingURL=Producto.css.map */
