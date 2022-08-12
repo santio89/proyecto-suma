@@ -6,8 +6,11 @@ export default function Nenes() {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        /* aca podria ir un fetch para traer los productos de algun lado */
-        setProductos([{ nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }]);
+        fetch("./assets/products/nenes.json").then(res => res.json()).then(prods => {
+            setTimeout(()=>{
+                setProductos(prods.nenes)
+            }, 400)
+        }).catch(e=>console.log("error fetching data: ", e))
     }, [])
 
     return (

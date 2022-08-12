@@ -4,7 +4,7 @@ import '../styles/css/Producto.css'
 export default function Producto({ nombre, descripcion, url }) {
     const imgModal = useRef(null);
     const [info, setInfo] = useState(false);
-    console.log(descripcion)
+    
     const modalCloseClick = (e) => { if (e.target === imgModal.current) { window.removeEventListener("click", modalCloseClick); imgModal.current.close() } };
     const modalCloseScroll = () => { window.removeEventListener("scroll", modalCloseScroll); imgModal.current.close() }
 

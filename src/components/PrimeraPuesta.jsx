@@ -6,8 +6,11 @@ export default function PrimeraPuesta() {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        /* aca podria ir un fetch para traer los productos de algun lado */
-        setProductos([{ nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }, { nombre: "test nombre", descripcion: `nombre: test\n marca: test\n colores: test\n talles: test`, url: "https://picsum.photos/700/700" }]);
+        fetch("./assets/products/primeraPuesta.json").then(res => res.json()).then(prods => {
+            setTimeout(()=>{
+                setProductos(prods.primeraPuesta)
+            }, 400)
+        }).catch(e=>console.log("error fetching data: ", e))
     }, [])
 
     return (

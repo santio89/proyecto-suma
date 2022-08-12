@@ -28,9 +28,13 @@
     --font-p: var(--font-sm);
 }
 
+body{
+    font-family: 'century gothic', sans-serif;
+}
+
 .section-full {
     width: 100%;
-    min-height: 60vh;
+    min-height: 80vh;
     padding: clamp(.1rem, .1rem + 1vw, 1rem) clamp(.4rem, .4rem + 1vw, 4rem);
     max-width: 1280px;
     margin: 0 auto;
