@@ -10,8 +10,7 @@
 }
 .home__banner {
   width: 100%;
-  aspect-ratio: 3.8;
-  min-height: 180px;
+  height: clamp(180px, 180px + 5vw + 5vh, 30vh);
   font-size: var(--font-banner);
   font-weight: bold;
   font-style: italic;
