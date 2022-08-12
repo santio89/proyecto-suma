@@ -16,7 +16,7 @@ export default function Galeria({ productos, titulo }) {
                 <div className='galeria__productos'>
                     {productos.map((producto, index) => {
                         return (
-                            <Producto key={index} nombre={producto.nombre} url={producto.url} />
+                            <Producto key={index} nombre={producto.nombre} url={producto.url} descripcion={producto.descripcion} />
                         )
                     })}
                 </div>

@@ -8,9 +8,10 @@
   --color-segundo: var(--color-white);
   --color-tercero: var(--color-black);
   /* font-size basic */
-  --font-xs: .9rem;
-  --font-sm: 1.1rem;
-  --font-md: 1.2rem;
+  --font-xs: 1rem;
+  --font-sm: 1.2rem;
+  --font-smm: 1.28rem;
+  --font-md: 1.4rem;
   --font-lg: 2rem;
   --font-xl: 2.4rem;
   --font-fluid-sm: clamp(1rem, 1rem + 1vw, 1.5rem);
@@ -18,10 +19,10 @@
   --font-fluid-lg: clamp(1.8rem, 2rem + 1vw, 2.4rem);
   --font-fluid-xl: clamp(2.4rem, 2.4rem + 1vw, 3.4rem);
   /* font-size schema */
+  --font-banner: var(--font-fluid-md)
   --font-title: var(--font-fluid-lg);
   --font-subt: var(--font-fluid-md);
   --font-p: var(--font-sm);
-  --font-banner: var(--font-fluid-md) ;
 }
 
 .section-full {

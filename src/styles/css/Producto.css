@@ -1,16 +1,48 @@
 .producto {
+  -webkit-animation: opacityStart 1.2s ease-in;
+          animation: opacityStart 1.2s ease-in;
+  max-width: 340px;
+  color: var(--color-tercero);
+  position: relative;
+}
+.producto__innerContainer {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: start;
   position: relative;
+  width: 100%;
+  border-radius: 1.8em;
   -webkit-animation: opacityStart 1.2s ease-in;
           animation: opacityStart 1.2s ease-in;
-  max-width: 340px;
-  color: var(--color-tercero);
+}
+.producto__innerText {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 1.4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.8em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  outline: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-animation: opacityStart 0.3s ease-in-out;
+          animation: opacityStart 0.3s ease-in-out;
+  white-space: pre-line;
+  line-height: 1.8;
+  font-size: var(--font-smm);
 }
 .producto__imgContainer {
   width: 100%;
+  border-radius: 1.8em;
+  aspect-ratio: 1;
 }
 .producto__imgContainer img {
   aspect-ratio: 1;
@@ -22,8 +54,8 @@
 .producto__imgContainer:hover + .producto__expand, .producto__imgContainer:focus-visible + .producto__expand {
   visibility: visible;
 }
-.producto__info {
-  font-size: var(--font-p);
+.producto__name {
+  font-size: var(--font-smm);
   padding: 0.2em;
 }
 .producto__imgModal {
@@ -80,11 +112,14 @@
 .producto__expand:hover, .producto__expand:focus-visible {
   visibility: visible;
 }
-.producto__rotate {
+.producto__dots {
   align-self: end;
   cursor: pointer;
   border-radius: 50%;
   padding: 0.1em;
   margin: -1em 0.2em 0.2em 0;
   color: var(--color-tercero);
+}
+.producto__dots.active {
+  color: var(--color-primero);
 }/*# sourceMappingURL=Producto.css.map */

@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 60vh;
 
     &__productos{
         width: 100%;
@@ -12,6 +13,7 @@
         gap: clamp(1rem, 1rem + 1vw, 4rem);
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         font-size: var(--font-sm);
+        min-height: inherit;
     }
 
     &__title{
