@@ -13,7 +13,7 @@ export default function Galeria({ productos, titulo }) {
         <>
             <section className='section-full galeria'>
                 <h2 className='galeria__title'>{titulo}</h2>
-                {productos.length === 0 && <span class="loader"></span>}
+                {productos.length === 0 && <span className="loader"></span>}
                 <div className='galeria__productos'>
                     {productos.map((producto, index) => {
                         return (
