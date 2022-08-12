@@ -3,6 +3,7 @@
     max-width: 340px;
     color: var(--color-tercero);
     position: relative;
+    overflow: hidden;
 
     &__innerContainer {
         display: flex;
@@ -15,14 +16,20 @@
         animation: opacityStart .6s ease-in;
     }
 
-    &__innerText{
-        width: 100%;
-        aspect-ratio: 1;
-        border-radius: 1.4em;
+    &__innerTextContainer{
         position: absolute;
         top: 0;
         left: 0;
-        padding: 1.8em;
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 1.4em;
+        overflow: hidden;
+    }
+
+    &__innerText{
+        width: 100%;
+        aspect-ratio: 1;
+        padding: .9em 1.8em;
         display: flex;
         flex-flow: column wrap;
         justify-content: start;
@@ -35,7 +42,11 @@
         white-space: pre-line;
         line-height: 1.8;
         font-size: var(--font-smm);
-        overflow: hidden;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
     }
 
     &__imgContainer {
