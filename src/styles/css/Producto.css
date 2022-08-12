@@ -54,6 +54,7 @@
   border-radius: 1.8em;
   aspect-ratio: 1;
   min-width: 250px;
+  background: var(--color-segundo);
 }
 .producto__imgContainer img {
   aspect-ratio: 1;
