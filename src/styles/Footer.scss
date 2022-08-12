@@ -12,6 +12,7 @@ section {
 .footer {
     display: flex;
     margin-bottom: 1.7rem;
+    padding: 0 clamp(.2rem, .2rem + 2vw, 1rem);
 
     .title-footer {
         font-weight: bold;
@@ -19,11 +20,13 @@ section {
 
     .col-rrss {
         width: fit-content;
+        padding: 0 .2em;
+
         .container-rrss {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+
         }
     }
 }
@@ -33,53 +36,19 @@ section {
     margin-bottom: 2.5rem;
 }
 
-
-@media only screen and (max-width: 576px) {
-    
-    .footer {
-        font-size: 0.65em;
-        flex-direction: column;
-        padding: 0 3.5rem;
-
-        .col-footer, .col-rrss {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-
-            .btn-responsive {
-                text-align: end;
-            }
-
-            .container-rrss {
-                width: 8rem;
-    
-                .logos-rrss {
-                    width: 1.5rem;
-                }
-                
-            }
-        }
-
-        .col-rrss {
-            width: 100%;
-        }
-    }
-    
-    .development {
-        font-size: 0.5em;
-    }
+.btn-responsive {
+    max-width: 180px;
 }
 
-@media only screen and (max-width: 766px) and (min-width: 577px) {
-    
+
+@media only screen and (max-width: 576px) {
+
     .footer {
         font-size: 0.7em;
         flex-direction: column;
-        padding: 0 5rem;
 
-        .col-footer, .col-rrss {
+        .col-footer,
+        .col-rrss {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -92,11 +61,11 @@ section {
 
             .container-rrss {
                 width: 8rem;
-    
+
                 .logos-rrss {
-                    width: 1.7rem;
+                    width: 1.5rem;
                 }
-                
+
             }
         }
 
@@ -104,67 +73,104 @@ section {
             width: 100%;
         }
     }
-    
+
     .development {
         font-size: 0.6em;
     }
 }
 
+@media only screen and (max-width: 766px) and (min-width: 577px) {
+
+    .footer {
+        font-size: 0.74em;
+        flex-direction: column;
+
+        .col-footer,
+        .col-rrss {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            .btn-responsive {
+                text-align: end;
+            }
+
+            .container-rrss {
+                width: 8rem;
+
+                .logos-rrss {
+                    width: 1.7rem;
+                }
+
+            }
+        }
+
+        .col-rrss {
+            width: 100%;
+        }
+    }
+
+    .development {
+        font-size: 0.64em;
+    }
+}
+
 @media only screen and (max-width: 992px) and (min-width: 767px) {
-    
+
     .footer {
         font-size: 0.8em;
         justify-content: space-around;
-        padding: 0 1rem;
-    
+
         .row-links-footer {
             display: flex;
             width: fit-content;
             gap: 3rem;
-                
+
             .texto-btn {
                 font-size: 0.8em;
             }
         }
-    
+
         .title-footer {
             margin-bottom: 1rem;
         }
-    
+
         .col-rrss {
             width: fit-content;
-    
+
             .logos-rrss {
                 width: 1.8rem;
             }
         }
     }
-    
+
     .development {
         font-size: 0.7em;
     }
 }
 
 @media only screen and (min-width: 993px) {
-    
+
     .footer {
         font-size: 1em;
         justify-content: space-around;
-    
+
         .row-links-footer {
             display: flex;
             width: fit-content;
             gap: 5rem;
-                
+
             .texto-btn {
                 font-size: 0.8em;
             }
         }
-    
+
         .title-footer {
             margin-bottom: 1rem;
         }
-    
+
         .col-rrss {
             width: fit-content;
 
@@ -173,8 +179,12 @@ section {
             }
         }
     }
-    
+
     .development {
         font-size: 0.7em;
+    }
+
+    .btn-responsive {
+        max-width: none;
     }
 }
