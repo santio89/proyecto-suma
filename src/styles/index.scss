@@ -84,7 +84,8 @@ body {
     border-radius: 50%;
     display: inline-block;
     box-sizing: border-box;
-    animation: rotation .8s linear infinite;
+    animation: rotation .6s linear infinite;
+    margin-top: 4%;
 }
 
 @media (max-width: 577px) {
