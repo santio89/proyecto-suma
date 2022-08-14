@@ -41,7 +41,7 @@
         }
 
         a {
-            transition: font-size 400ms;
+            transition: font-size 400ms, color 200ms;
 
             &:focus-visible {
                 color: var(--color-primero);

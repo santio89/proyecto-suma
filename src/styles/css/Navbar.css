@@ -37,7 +37,7 @@
   transition: 400ms;
 }
 .navbar .links a {
-  transition: font-size 400ms;
+  transition: font-size 400ms, color 200ms;
 }
 .navbar .links a:focus-visible {
   color: var(--color-primero);
