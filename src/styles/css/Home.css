@@ -23,7 +23,7 @@
   -webkit-animation: bannerGrad 20s infinite linear alternate, opacityStart 400ms ease-in;
           animation: bannerGrad 20s infinite linear alternate, opacityStart 400ms ease-in;
   overflow: hidden;
-  box-shadow: 1px 2px 4px 0 rgb(180, 180, 180);
+  box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), 0.4);
 }
 .home__banner img {
   width: 100%;
