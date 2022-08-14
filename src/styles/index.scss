@@ -10,14 +10,8 @@
     --color-primero: var(--color-red);
     --color-segundo: var(--color-white);
     --color-tercero: var(--color-black);
-    --color-primero-rgb: var(--color-black-rgb);
     --color-segundo-rgb: var(--color-white-rgb);
-
-/*     DARK MODE
-    --color-segundo: var(--color-black);
-    --color-tercero: var(--color-white);
-    --color-primero-rgb: var(--color-white-rgb);
-    --color-segundo-rgb: var(--color-black-rgb); */
+    --color-tercero-rgb: var(--color-black-rgb);
 
     /* font-size basic */
     --font-xs: 1rem;
@@ -66,6 +60,13 @@ html {
 body {
     font-family: 'century gothic', sans-serif;
     background-color: var(--color-segundo);
+}
+
+.dark-theme{
+    --color-segundo: var(--color-black);
+    --color-tercero: var(--color-white);
+    --color-segundo-rgb: var(--color-black-rgb);
+    --color-tercero-rgb: var(--color-white-rgb);
 }
 
 .section-full {
