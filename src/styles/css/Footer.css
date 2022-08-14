@@ -32,7 +32,7 @@ section {
 
 .development {
   text-align: center;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
   color: var(--color-primero);
 }
 

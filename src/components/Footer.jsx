@@ -1,37 +1,7 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/css/Footer.css';
 
-const Footer = () => {
-    const [darkTheme, setDarkTheme] = useState(false || JSON.parse(localStorage.getItem("sumaDarkTheme")));
-
-    const toggleDarkTheme = () => {
-        setDarkTheme(current => !current);
-    }
-
-    useEffect(() => {
-        const checkStorage = (e) => {
-            const { key, newValue } = e;
-
-            if (key === "sumaDarkTheme") {
-                setDarkTheme(JSON.parse(newValue))
-            }
-        }
-
-        window.addEventListener("storage", checkStorage)
-        return (() => window.removeEventListener("storage", checkStorage))
-    }, [])
-
-    useEffect(() => {
-        localStorage.setItem("sumaDarkTheme", JSON.stringify(darkTheme));
-
-        if (darkTheme) {
-            document.body.classList.add("dark-theme")
-        } else {
-            document.body.classList.remove("dark-theme")
-        }
-
-    }, [darkTheme])
+const Footer = ({darkTheme, toggleDarkTheme}) => {
 
     return (
         <section>
