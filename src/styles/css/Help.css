@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: clamp(1em, 1em + 0.8vw, 4em) clamp(0.4em, 0.4em + 0.2vw, 1em);
+  color: var(--color-tercero);
 }
 
 .inactive {
@@ -9,33 +10,47 @@
 }
 
 .btn-active {
-  box-shadow: 0px 1px 0 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 1px 0 0 rgba(var(--color-tercero-rgb), 0.8);
 }
 
-.row, .row-btn, .row-links {
+.row,
+.row-btn,
+.row-links {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.row .title, .row-btn .title, .row-links .title {
+.row .title,
+.row-btn .title,
+.row-links .title {
   font-size: 2.7em;
   font-weight: bold;
   margin-bottom: 1.3em;
 }
-.row .col, .row-btn .col, .row-links .col {
+.row .col,
+.row-btn .col,
+.row-links .col {
   text-align: justify;
 }
-.row .col button, .row-btn .col button, .row-links .col button {
+.row .col button,
+.row-btn .col button,
+.row-links .col button {
   line-height: 1.8;
 }
-.row .col button:hover, .row-btn .col button:hover, .row-links .col button:hover {
-  box-shadow: 0px 1px 0 0 rgba(0, 0, 0, 0.8);
+.row .col button:hover,
+.row-btn .col button:hover,
+.row-links .col button:hover {
+  box-shadow: 0px 1px 0 0 rgba(var(--color-tercero-rgb), 0.8);
 }
-.row .text, .row-btn .text, .row-links .text {
+.row .text,
+.row-btn .text,
+.row-links .text {
   font-size: 1.1em;
   margin-bottom: 1em;
 }
-.row .text .text-left-align, .row-btn .text .text-left-align, .row-links .text .text-left-align {
+.row .text .text-left-align,
+.row-btn .text .text-left-align,
+.row-links .text .text-left-align {
   margin-left: 1em;
   margin-bottom: 0.2em;
   display: block;
@@ -71,10 +86,14 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .row .title, .row-btn .title, .row-links .title {
+  .row .title,
+.row-btn .title,
+.row-links .title {
     font-size: 1.25em;
   }
-  .row .text, .row-btn .text, .row-links .text {
+  .row .text,
+.row-btn .text,
+.row-links .text {
     font-size: 0.6em;
   }
   .row-links {
@@ -95,10 +114,14 @@
   }
 }
 @media only screen and (max-width: 766px) and (min-width: 577px) {
-  .row .title, .row-btn .title, .row-links .title {
+  .row .title,
+.row-btn .title,
+.row-links .title {
     font-size: 1.9em;
   }
-  .row .text, .row-btn .text, .row-links .text {
+  .row .text,
+.row-btn .text,
+.row-links .text {
     font-size: 0.7em;
   }
   .row-links {
@@ -119,10 +142,14 @@
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 767px) {
-  .row .title, .row-btn .title, .row-links .title {
+  .row .title,
+.row-btn .title,
+.row-links .title {
     font-size: 2em;
   }
-  .row .text, .row-btn .text, .row-links .text {
+  .row .text,
+.row-btn .text,
+.row-links .text {
     font-size: 0.9em;
   }
   .row-links {

@@ -45,4 +45,5 @@ button, input, textarea, select {
 
 button {
   cursor: pointer;
+  color: inherit;
 }/*# sourceMappingURL=reset.css.map */
