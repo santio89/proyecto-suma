@@ -2,12 +2,22 @@
     /* colores basic */
     --color-red: #731620;
     --color-white: #ffffff;
-    --color-black: #141414;
+    --color-black: rgb(20, 20, 20);
+    --color-white-rgb: 255, 255, 255;
+    --color-black-rgb: 20, 20, 20;
 
     /* colores schema*/
     --color-primero: var(--color-red);
     --color-segundo: var(--color-white);
     --color-tercero: var(--color-black);
+    --color-primero-rgb: var(--color-black-rgb);
+    --color-segundo-rgb: var(--color-white-rgb);
+
+/*     DARK MODE
+    --color-segundo: var(--color-black);
+    --color-tercero: var(--color-white);
+    --color-primero-rgb: var(--color-white-rgb);
+    --color-segundo-rgb: var(--color-black-rgb); */
 
     /* font-size basic */
     --font-xs: 1rem;

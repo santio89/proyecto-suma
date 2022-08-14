@@ -16,7 +16,7 @@
         animation: opacityStart .6s ease-in;
     }
 
-    &__innerTextContainer{
+    &__innerTextContainer {
         position: absolute;
         top: 0;
         left: 0;
@@ -26,7 +26,7 @@
         overflow: hidden;
     }
 
-    &__innerText{
+    &__innerText {
         width: 100%;
         aspect-ratio: 1;
         padding: .9em 1.8em;
@@ -34,10 +34,10 @@
         flex-flow: column wrap;
         justify-content: start;
         align-items: center;
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba(var(--color-segundo-rgb), .8);
+        outline: 1px solid var(--color-segundo);
+        border: 1px solid var(--color-segundo);
         backdrop-filter: blur(2px);
-        outline: 1px solid rgba(255, 255, 255, 255);
-        border: 1px solid rgba(255, 255, 255, 255);
         animation: opacityStart .3s ease-in-out;
         white-space: pre-line;
         line-height: 1.8;
@@ -138,7 +138,7 @@
         margin: -1em .2em .2em 0;
         color: var(--color-tercero);
 
-        &.active{
+        &.active {
             color: var(--color-primero);
         }
     }

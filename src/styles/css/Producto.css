@@ -34,11 +34,11 @@
   flex-flow: column wrap;
   justify-content: start;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(var(--color-segundo-rgb), 0.8);
+  outline: 1px solid var(--color-segundo);
+  border: 1px solid var(--color-segundo);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  outline: 1px solid rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
   -webkit-animation: opacityStart 0.3s ease-in-out;
           animation: opacityStart 0.3s ease-in-out;
   white-space: pre-line;

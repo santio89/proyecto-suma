@@ -13,6 +13,7 @@ section {
   display: flex;
   margin-bottom: 1.7rem;
   padding: 0 clamp(0.2rem, 0.2rem + 2vw, 1rem);
+  color: var(--color-tercero);
 }
 .footer .title-footer {
   font-weight: bold;
@@ -32,6 +33,7 @@ section {
 .development {
   text-align: center;
   margin-bottom: 2.5rem;
+  color: var(--color-primero);
 }
 
 .btn-responsive {
