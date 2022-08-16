@@ -12,7 +12,7 @@ export default function Home() {
         <div className='section-full home'>
             <div className='home__banner'>
                 <img alt="home banner" src='https://images.pexels.com/photos/1094071/pexels-photo-1094071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
-                <p>Ropa para bebés y niños</p>
+                <p>MULTIMARCA INFANTIL</p>
             </div>
             <div className='home__categories'>
                 <div className='home__categories__card'>
@@ -21,7 +21,7 @@ export default function Home() {
                     </div>
                     <div className='home__categories__card__info'>
                         <div className='home__categories__card__info__text'>
-                            <p>Primera Puesta<br />0 a 12 meses</p>
+                            <p>Primera Puesta</p>
                         </div>
                         <Link to="/primera" className='home__categories__card__info__btn'>
                             Ver más
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
                     <div className='home__categories__card__info'>
                         <div className='home__categories__card__info__text'>
-                            <p>Bebés<br />6 a 24 meses</p>
+                            <p>Bebés</p>
                         </div>
                         <Link to="/bebes" className='home__categories__card__info__btn'>
                             Ver más
@@ -49,7 +49,7 @@ export default function Home() {
                     </div>
                     <div className='home__categories__card__info'>
                         <div className='home__categories__card__info__text'>
-                            <p>Niños<br />2 a 10 años</p>
+                            <p>Niños</p>
                         </div>
                         <Link to="/nenes" className='home__categories__card__info__btn'>
                             Ver más

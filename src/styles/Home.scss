@@ -11,19 +11,17 @@
     &__banner {
         width: 100%;
         height: clamp(180px, 180px + 5vw + 5vh, 30vh);
-        font-size: var(--font-banner);
-        font-weight: bold;
-        font-style: italic;
         position: relative;
         border-radius: .2em;
-        background: linear-gradient(45deg, rgb(168, 23, 96), rgb(40, 92, 189), rgb(123, 15, 247));
-        background-size: 400%;
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        animation: bannerGrad 20s infinite linear alternate, opacityStart 400ms ease-in;
+        animation: bannerGrad 20s infinite linear, opacityStart 400ms ease-in;
         overflow: hidden;
         box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), .4);
-        
+        background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
+        background-blend-mode:screen;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 200%;
+    
         img {
             width: 100%;
             height: 100%;
@@ -36,14 +34,15 @@
 
         p {
             position: absolute;
-            bottom: 15%;
-            right: 5%;
-            color: white;
-            text-shadow: 1px 1px 0 var(--color-primero), 4px 4px 20px var(--color-segundo);
+            bottom: 2%;
+            right: 1%;
+            color: var(--color-white);
+            text-shadow: 0px 0px 20px var(--color-primero);
             opacity: 0;
             animation: translateFromRight .8s ease-in-out forwards;
             animation-delay: 400ms;
             padding: .4em;
+            font-size: var(--font-banner);
         }
     }
 
@@ -63,7 +62,6 @@
             width: clamp(300px, 300px + .4vw, 340px);
             max-width: 100%;
             font-size: var(--font-p);
-            font-weight: bold;
             animation: opacityStart 1.2s ease-in;
 
             &__imgContainer {
@@ -84,19 +82,22 @@
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
+                align-items: center;
                 gap: .2rem;
                 width: 100%;
                 padding: 4px;
                 line-height: 1.4;
 
                 &__text {
-                    color: var(--color-tercero)
+                    color: var(--color-tercero);
+                    font-weight: bold;
+                    font-size: 1.2em;
                 }
 
                 &__btn {
                     color: var(--color-segundo);
                     background: var(--color-primero);
-                    padding: .4em 1.8em;
+                    padding: .4em .8em;
                     border-radius: .4em;
                     display: flex;
                     justify-content: center;
@@ -135,26 +136,3 @@
     }
 }
 
-
-
-@keyframes bannerGrad {
-    0% {
-        background-position: bottom left;
-    }
-
-    25% {
-        background-position: top left;
-    }
-
-    50% {
-        background-position: top right;
-    }
-
-    75% {
-        background-position: bottom right;
-    }
-
-    100% {
-        background-position: bottom left;
-    }
-}

@@ -41,7 +41,7 @@
         animation: opacityStart .3s ease-in-out;
         white-space: pre-line;
         line-height: 1.8;
-        font-size: var(--font-smm);
+        font-size: var(--font-p);
         overflow-y: auto;
 
         &::-webkit-scrollbar {
@@ -70,7 +70,7 @@
     }
 
     &__name {
-        font-size: var(--font-smm);
+        font-size: var(--font-p);
         padding: .2em;
     }
 

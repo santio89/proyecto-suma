@@ -12,7 +12,7 @@
   --color-segundo-rgb: var(--color-white-rgb);
   --color-tercero-rgb: var(--color-black-rgb);
   /* font-size basic */
-  --font-xs: 1rem;
+  --font-xs: 1.1rem;
   --font-sm: 1.2rem;
   --font-smm: 1.28rem;
   --font-md: 1.4rem;
@@ -20,13 +20,14 @@
   --font-xl: 2.4rem;
   --font-fluid-sm: clamp(1rem, 1rem + 1vw, 1.5rem);
   --font-fluid-md: clamp(1rem, 1rem + 1.4vw, 1.8rem);
+  --font-fluid-mdd: clamp(1.2rem, 1.2rem + 1.4vw, 2rem);
   --font-fluid-lg: clamp(1.8rem, 2rem + 1vw, 2.4rem);
   --font-fluid-xl: clamp(2.4rem, 2.4rem + 1vw, 3.4rem);
   /* font-size schema */
-  --font-banner: var(--font-fluid-md);
+  --font-banner: var(--font-fluid-mdd);
   --font-title: var(--font-fluid-lg);
   --font-subt: var(--font-fluid-md);
-  --font-p: var(--font-sm);
+  --font-p: var(--font-smm);
 }
 
 html {
@@ -54,7 +55,8 @@ body {
   background-color: var(--color-segundo);
 }
 
-#root, .root-theme {
+#root,
+.root-theme {
   background-color: var(--color-segundo);
   width: 100%;
   height: 100%;
@@ -163,5 +165,39 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes bannerGrad {
+  0% {
+    background-position: bottom left;
+  }
+  25% {
+    background-position: top left;
+  }
+  50% {
+    background-position: top right;
+  }
+  75% {
+    background-position: bottom right;
+  }
+  100% {
+    background-position: bottom left;
+  }
+}
+@keyframes bannerGrad {
+  0% {
+    background-position: bottom left;
+  }
+  25% {
+    background-position: top left;
+  }
+  50% {
+    background-position: top right;
+  }
+  75% {
+    background-position: bottom right;
+  }
+  100% {
+    background-position: bottom left;
   }
 }/*# sourceMappingURL=index.css.map */

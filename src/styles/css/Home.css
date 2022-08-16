@@ -11,19 +11,17 @@
 .home__banner {
   width: 100%;
   height: clamp(180px, 180px + 5vw + 5vh, 30vh);
-  font-size: var(--font-banner);
-  font-weight: bold;
-  font-style: italic;
   position: relative;
   border-radius: 0.2em;
-  background: linear-gradient(45deg, rgb(168, 23, 96), rgb(40, 92, 189), rgb(123, 15, 247));
-  background-size: 400%;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  -webkit-animation: bannerGrad 20s infinite linear alternate, opacityStart 400ms ease-in;
-          animation: bannerGrad 20s infinite linear alternate, opacityStart 400ms ease-in;
+  -webkit-animation: bannerGrad 20s infinite linear, opacityStart 400ms ease-in;
+          animation: bannerGrad 20s infinite linear, opacityStart 400ms ease-in;
   overflow: hidden;
   box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), 0.4);
+  background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 200%;
 }
 .home__banner img {
   width: 100%;
@@ -38,16 +36,17 @@
 }
 .home__banner p {
   position: absolute;
-  bottom: 15%;
-  right: 5%;
-  color: white;
-  text-shadow: 1px 1px 0 var(--color-primero), 4px 4px 20px var(--color-segundo);
+  bottom: 2%;
+  right: 1%;
+  color: var(--color-white);
+  text-shadow: 0px 0px 20px var(--color-primero);
   opacity: 0;
   -webkit-animation: translateFromRight 0.8s ease-in-out forwards;
           animation: translateFromRight 0.8s ease-in-out forwards;
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
   padding: 0.4em;
+  font-size: var(--font-banner);
 }
 .home__categories {
   display: flex;
@@ -65,7 +64,6 @@
   width: clamp(300px, 300px + 0.4vw, 340px);
   max-width: 100%;
   font-size: var(--font-p);
-  font-weight: bold;
   -webkit-animation: opacityStart 1.2s ease-in;
           animation: opacityStart 1.2s ease-in;
 }
@@ -86,6 +84,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   gap: 0.2rem;
   width: 100%;
   padding: 4px;
@@ -93,11 +92,13 @@
 }
 .home__categories__card__info__text {
   color: var(--color-tercero);
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .home__categories__card__info__btn {
   color: var(--color-segundo);
   background: var(--color-primero);
-  padding: 0.4em 1.8em;
+  padding: 0.4em 0.8em;
   border-radius: 0.4em;
   display: flex;
   justify-content: center;
@@ -120,39 +121,5 @@
   }
   .home__categories__card__imgContainer {
     height: 30vh;
-  }
-}
-@-webkit-keyframes bannerGrad {
-  0% {
-    background-position: bottom left;
-  }
-  25% {
-    background-position: top left;
-  }
-  50% {
-    background-position: top right;
-  }
-  75% {
-    background-position: bottom right;
-  }
-  100% {
-    background-position: bottom left;
-  }
-}
-@keyframes bannerGrad {
-  0% {
-    background-position: bottom left;
-  }
-  25% {
-    background-position: top left;
-  }
-  50% {
-    background-position: top right;
-  }
-  75% {
-    background-position: bottom right;
-  }
-  100% {
-    background-position: bottom left;
   }
 }/*# sourceMappingURL=Home.css.map */

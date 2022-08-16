@@ -43,7 +43,7 @@
           animation: opacityStart 0.3s ease-in-out;
   white-space: pre-line;
   line-height: 1.8;
-  font-size: var(--font-smm);
+  font-size: var(--font-p);
   overflow-y: auto;
 }
 .producto__innerText::-webkit-scrollbar {
@@ -67,7 +67,7 @@
   visibility: visible;
 }
 .producto__name {
-  font-size: var(--font-smm);
+  font-size: var(--font-p);
   padding: 0.2em;
 }
 .producto__imgModal {
