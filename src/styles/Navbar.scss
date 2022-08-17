@@ -36,7 +36,7 @@
                 font-weight: bold;
             }
 
-            p{
+            p {
                 transition: 400ms;
             }
         }
@@ -57,18 +57,17 @@
     text-shadow: 0 0 50px var(--color-primero), 0 0 25px rgba(235, 124, 179, 0.4), 0 0 35px rgba(97, 149, 245, 0.4);
 }
 
-.scrolled{
+.scrolled {
     height: 4rem !important;
     box-shadow: 0 1px 3px 0 rgba(var(--color-tercero-rgb), .2);
 }
 
-.navbar.scrolled .logo-btn{
+.navbar.scrolled .logo-btn {
     font-size: 2em;
 }
 
-
 @media only screen and (max-width: 570px) {
-    .navbar{
+    .navbar {
         height: 7rem;
     }
 
@@ -76,7 +75,7 @@
         font-size: 3.4em;
     }
 
-    .navbar.scrolled .logo-btn{
+    .navbar.scrolled .logo-btn {
         font-size: 2.8em;
     }
 
@@ -88,10 +87,11 @@
         }
     }
 
-    .section-full{
+    .section-full {
         padding-top: 8rem;
     }
 }
+
 @media only screen and (max-width: 489px) {
     .navbar {
         padding: 4% 0;
@@ -110,17 +110,17 @@
         }
     }
 
-    .navbar.scrolled .logo-btn{
+    .navbar.scrolled .logo-btn {
         font-size: 2.4em;
     }
 
-    .section-full{
+    .section-full {
         padding-top: 7rem;
     }
 }
 
 @media only screen and (max-width: 766px) and (min-width: 571px) {
-    .navbar{
+    .navbar {
         height: 7rem;
     }
 
@@ -128,7 +128,7 @@
         font-size: 4em;
     }
 
-    .navbar.scrolled .logo-btn{
+    .navbar.scrolled .logo-btn {
         font-size: 3em;
     }
 
@@ -140,13 +140,13 @@
         }
     }
 
-    .section-full{
+    .section-full {
         padding-top: 8rem;
     }
 }
 
 @media only screen and (max-width: 992px) and (min-width: 767px) {
-    .navbar{
+    .navbar {
         height: 9rem
     }
 
@@ -154,7 +154,7 @@
         font-size: 5em;
     }
 
-    .navbar.scrolled .logo-btn{
+    .navbar.scrolled .logo-btn {
         font-size: 3.8em;
     }
 
@@ -166,13 +166,13 @@
         }
     }
 
-    .section-full{
+    .section-full {
         padding-top: 10rem;
     }
 }
 
 @media only screen and (min-width: 993px) {
-    .navbar{
+    .navbar {
         height: 10rem
     }
 
@@ -180,7 +180,7 @@
         font-size: 6em;
     }
 
-    .navbar.scrolled .logo-btn{
+    .navbar.scrolled .logo-btn {
         font-size: 4.4em;
     }
 
@@ -192,7 +192,7 @@
         }
     }
 
-    .section-full{
+    .section-full {
         padding-top: 11rem;
     }
 }
