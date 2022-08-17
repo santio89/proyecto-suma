@@ -35,14 +35,10 @@
             .titulo-btn {
                 font-weight: bold;
             }
-
-            p {
-                transition: 400ms;
-            }
         }
 
         a {
-            transition: font-size 400ms, color 200ms;
+            transition: font-size 200ms, color 200ms;
 
             &:focus-visible {
                 color: var(--color-primero);
