@@ -29,7 +29,7 @@
 .producto__innerText {
   width: 100%;
   aspect-ratio: 1;
-  padding: 0.9em 1.8em;
+  padding: 0.9em;
   display: flex;
   flex-flow: column wrap;
   justify-content: start;
