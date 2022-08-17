@@ -59,25 +59,24 @@
   font-size: 2em;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 570px) {
   .navbar {
-    padding: 4% 0;
-    height: 6.4rem;
+    height: 7rem;
   }
-  .navbar .logo-btn {
-    font-size: 3em;
+  .logo-btn {
+    font-size: 3.4em;
   }
-  .navbar .navbar.scrolled .logo-btn {
-    font-size: 2.2em;
+  .navbar.scrolled .logo-btn {
+    font-size: 2.8em;
   }
-  .navbar .links {
-    width: 58%;
+  .links {
+    width: 48%;
   }
-  .navbar .links .btn {
-    font-size: 0.7em;
+  .links .btn {
+    font-size: 0.68em;
   }
   .section-full {
-    padding-top: 7.4rem;
+    padding-top: 8rem;
   }
 }
 @media only screen and (max-width: 489px) {
@@ -86,10 +85,7 @@
     height: 6rem;
   }
   .navbar .logo-btn {
-    font-size: 2.4em;
-  }
-  .navbar .navbar.scrolled .logo-btn {
-    font-size: 2em;
+    font-size: 3em;
   }
   .navbar .links {
     width: 60%;
@@ -97,11 +93,14 @@
   .navbar .links .btn {
     font-size: 0.62em;
   }
+  .navbar.scrolled .logo-btn {
+    font-size: 2.4em;
+  }
   .section-full {
     padding-top: 7rem;
   }
 }
-@media only screen and (max-width: 766px) and (min-width: 577px) {
+@media only screen and (max-width: 766px) and (min-width: 571px) {
   .navbar {
     height: 7rem;
   }
