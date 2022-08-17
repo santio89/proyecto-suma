@@ -11,7 +11,7 @@
         place-content: center;
         place-items: center;
         gap: clamp(1rem, 1rem + 1vw, 4rem);
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         font-size: var(--font-sm);
         min-height: inherit;
     }

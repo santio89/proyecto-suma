@@ -30,6 +30,7 @@
 
         .link-btn {
             text-align: center;
+            padding: 0 .12em;
 
             .titulo-btn {
                 font-weight: bold;
@@ -65,24 +66,53 @@
     font-size: 2em;
 }
 
+
+
 @media only screen and (max-width: 576px) {
+    .navbar {
+        padding: 4% 0;
+        height: 6.4rem;
+
+        .logo-btn {
+            font-size: 2.2em;
+        }
+
+        .navbar.scrolled .logo-btn{
+            font-size: 1.8em;
+        }
+
+        .links {
+            width: 58%;
+
+            .btn {
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    .section-full{
+        padding-top: 7.4rem;
+    }
+}
+
+@media only screen and (max-width: 489px) {
     .navbar {
         padding: 4% 0;
         height: 6rem;
 
         .logo-btn {
-            font-size: 1.8em;
+            font-size: 1.82em;
         }
 
         .navbar.scrolled .logo-btn{
-            font-size: 1.4em;
+            font-size: 1.42em;
         }
 
         .links {
             width: 60%;
 
             .btn {
-                font-size: 0.6em;
+                font-size: 0.62em;
             }
         }
     }
@@ -106,7 +136,7 @@
     }
 
     .links {
-        width: 46%;
+        width: 48%;
 
         .btn {
             font-size: 0.8em;
