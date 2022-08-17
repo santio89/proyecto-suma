@@ -29,7 +29,7 @@
 }
 .navbar .links .link-btn {
   text-align: center;
-  padding: 0 0.1em;
+  padding: 0 0.11em;
 }
 .navbar .links .link-btn .titulo-btn {
   font-weight: bold;
@@ -65,10 +65,10 @@
     height: 6.4rem;
   }
   .navbar .logo-btn {
-    font-size: 2.2em;
+    font-size: 3em;
   }
   .navbar .navbar.scrolled .logo-btn {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
   .navbar .links {
     width: 58%;
@@ -86,10 +86,10 @@
     height: 6rem;
   }
   .navbar .logo-btn {
-    font-size: 1.82em;
+    font-size: 2.4em;
   }
   .navbar .navbar.scrolled .logo-btn {
-    font-size: 1.42em;
+    font-size: 2em;
   }
   .navbar .links {
     width: 60%;
