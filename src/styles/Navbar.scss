@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     color: var(--color-tercero);
-    transition: height 400ms, box-shadow 400ms;
+    transition: height 400ms;
     position: fixed;
     background-color: var(--color-segundo);
     overflow: hidden;
@@ -38,7 +38,7 @@
         }
 
         a {
-            transition: font-size 200ms, color 200ms;
+            transition: font-size 200ms, color 200ms, text-shadow 200ms;
 
             &:focus-visible {
                 color: var(--color-primero);
