@@ -17,19 +17,19 @@
         overflow: hidden;
         box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), .4);
         background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
-        background-blend-mode:screen;
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: 200%;
-    
+        will-change: height;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: 0 60%;
             border-radius: inherit;
-            filter: contrast(140%) brightness(110%);
             mix-blend-mode: screen;
+            filter: contrast(140%) brightness(110%);
         }
 
         p {
@@ -39,7 +39,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-           /*  bottom: 2%;
+            /*  bottom: 2%;
             right: 1%; */
             color: var(--color-white);
             opacity: 0;
@@ -142,4 +142,3 @@
         }
     }
 }
-
