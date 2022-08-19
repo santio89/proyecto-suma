@@ -24,10 +24,11 @@
     --font-fluid-md: clamp(1rem, 1rem + 1.4vw, 1.8rem);
     --font-fluid-mdd: clamp(1.2rem, 1.2rem + 1.4vw, 2rem);
     --font-fluid-lg: clamp(1.8rem, 2rem + 1vw, 2.4rem);
-    --font-fluid-xl: clamp(2.4rem, 2.4rem + 1vw, 3.4rem);
+    --font-fluid-xl: clamp(2rem, 2rem + 1.2vw, 3.4rem);
+    --font-fluid-xxl: clamp(2rem, 2rem + 3.4vw, 6.8rem);
 
     /* font-size schema */
-    --font-banner: var(--font-fluid-mdd);
+    --font-banner: /* var(--font-fluid-mdd) */var(--font-fluid-xxl);
     --font-title: var(--font-fluid-lg);
     --font-subt: var(--font-fluid-md);
     --font-p: var(--font-smm);
