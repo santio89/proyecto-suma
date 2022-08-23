@@ -113,7 +113,7 @@
 }
 .producto__expand {
   position: absolute;
-  bottom: 26%;
+  bottom: 28%;
   right: 6%;
   color: var(--color-segundo);
   filter: drop-shadow(2px 2px 0 var(--color-tercero));
