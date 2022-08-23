@@ -116,7 +116,7 @@
   bottom: 28%;
   right: 6%;
   color: var(--color-segundo);
-  filter: drop-shadow(2px 2px 0 var(--color-tercero));
+  filter: drop-shadow(1px 1px 0 var(--color-tercero));
   cursor: pointer;
   pointer-events: none;
   visibility: hidden;
