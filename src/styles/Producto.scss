@@ -53,7 +53,7 @@
         width: 100%;
         border-radius: 1.8em;
         aspect-ratio: 1;
-        min-width: 220px;
+        min-width: 226px;
         background: var(--color-segundo);
 
         img {
@@ -116,7 +116,7 @@
 
     &__expand {
         position: absolute;
-        bottom: 24%;
+        bottom: 26%;
         right: 6%;
         color: var(--color-segundo);
         filter: drop-shadow(2px 2px 0 var(--color-tercero));
