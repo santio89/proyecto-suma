@@ -53,7 +53,7 @@
   width: 100%;
   border-radius: 1.8em;
   aspect-ratio: 1;
-  min-width: 226px;
+  min-width: 220px;
   background: var(--color-segundo);
 }
 .producto__imgContainer img {
@@ -68,7 +68,9 @@
 }
 .producto__name {
   font-size: var(--font-p);
-  padding: 0.2em;
+  padding: 0.2em 0.1em 0.2em 0.1em;
+  max-width: 84%;
+  word-break: break-all;
 }
 .producto__imgModal {
   margin: auto;
