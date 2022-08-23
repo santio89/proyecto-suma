@@ -13,14 +13,15 @@
         height: clamp(180px, 180px + 5vw + 5vh, 30vh);
         position: relative;
         border-radius: .2em;
-        animation: bannerGrad 20s infinite linear, opacityStart 400ms ease-in;
+        animation: opacityStart 400ms ease-in/*(, bannerGrad 20s infinite linear (esta animacion, combinada con el filter y el mix-blend-mode, baja la performance del sitio)*/;
         overflow: hidden;
         box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), .4);
-        background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
+        background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247)), radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: 200%;
         will-change: height;
+        background-blend-mode: soft-light;
 
         img {
             width: 100%;

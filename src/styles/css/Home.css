@@ -13,15 +13,16 @@
   height: clamp(180px, 180px + 5vw + 5vh, 30vh);
   position: relative;
   border-radius: 0.2em;
-  -webkit-animation: bannerGrad 20s infinite linear, opacityStart 400ms ease-in;
-          animation: bannerGrad 20s infinite linear, opacityStart 400ms ease-in;
+  -webkit-animation: opacityStart 400ms ease-in;
+          animation: opacityStart 400ms ease-in;
   overflow: hidden;
   box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), 0.4);
-  background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
+  background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247)), radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 200%;
   will-change: height;
+  background-blend-mode: soft-light;
 }
 .home__banner img {
   width: 100%;
