@@ -68,9 +68,9 @@
 }
 .producto__name {
   font-size: var(--font-p);
-  padding: 0.2em 0.1em 0.2em 0.1em;
-  max-width: 84%;
+  padding: 0.28em 0.1em 0.56em 0.1em;
   word-break: break-all;
+  line-height: 1.2;
 }
 .producto__imgModal {
   margin: auto;
