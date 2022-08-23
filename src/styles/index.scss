@@ -59,6 +59,11 @@ html {
     /* FIN SCROLLBAR */
 }
 
+::selection{
+    color: var(--color-white);
+    background: var(--color-primero);
+}
+
 body {
     font-family: 'century gothic', sans-serif;
     background-color: var(--color-segundo);

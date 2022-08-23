@@ -51,6 +51,16 @@ html ::-webkit-scrollbar-thumb {
   border-radius: 12px;
 }
 
+::-moz-selection {
+  color: var(--color-white);
+  background: var(--color-primero);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-primero);
+}
+
 body {
   font-family: "century gothic", sans-serif;
   background-color: var(--color-segundo);
