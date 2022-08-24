@@ -8,6 +8,7 @@ import Help from './components/Help';
 import PrimeraPuesta from './components/PrimeraPuesta';
 import Bebes from './components/Bebes';
 import Nenes from './components/Nenes';
+import NotFound from './components/NotFound';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -30,13 +31,11 @@ function App() {
           <Navbar />
 
           <Routes>
+            <Route path="/*" element={<NotFound />} />
             <Route path='/' element={<Home />} />
             <Route path='/primera' element={<PrimeraPuesta />} />
             <Route path='/bebes' element={<Bebes />} />
             <Route path='/nenes' element={<Nenes />} />
-
-
-            {/*  <Route path="/*" element={<Error404 />} /> */}
             <Route path='/about' element={<About />} />
             <Route path='/help/:helpSection' element={<Help />} />
           </Routes>

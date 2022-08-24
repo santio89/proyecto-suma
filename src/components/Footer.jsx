@@ -47,18 +47,18 @@ const Footer = ({darkTheme, toggleDarkTheme}) => {
                 <div className='col-rrss'>
                     <p className='title-footer'>Seguinos en nuestras redes</p>
                     <div className='container-rrss'>
-                        <Link className="btn" to=''>
+                        <a className="btn" href='https://www.instagram.com/sumakids_uy' rel='noreferrer' target='_blank'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg' alt='Logo de Instagram' className='logos-rrss' />
-                        </Link>
-                        <Link className="btn" to=''>
+                        </a>
+                        <a className="btn" href='https://www.facebook.com/Sumakids_uy-110894938380819' rel='noreferrer' target='_blank'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png' alt='Logo de Facebook' className='logos-rrss' />
-                        </Link>
-                        <Link className="btn" to=''>
+                        </a>
+                        <a className="btn" href='https://api.whatsapp.com/send?phone=59894373344&app=facebook&entry_point=page_cta&fbclid=IwAR19T2feRHoxnjGggw3exR21foISUDZDTjj0S_hna6sWwJ7ETSOJiTWLouE' rel='noreferrer' target='_blank'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg' alt='Logo de WhatsApp' className='logos-rrss' />
-                        </Link>
-                        <Link className="btn" to=''>
+                        </a>
+                        <a className="btn" href='mailto:info@sumamultimarca.com'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg' alt='Logo de Gmail' className='logos-rrss' />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
