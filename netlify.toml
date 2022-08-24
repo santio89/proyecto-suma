@@ -2,7 +2,4 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-  from = "https://sumamultimarca.netlify.app/"
-  to = "https://sumamultimarca.com/"
-  status = 301
+  https://sumamultimarca.netlify.app/* https://sumamultimarca.com/:splat 301!
