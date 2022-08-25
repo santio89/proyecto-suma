@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/css/NotFound.css';
-import picture from '../images/not-found.jpg'
 
 const NotFound = () => {
 
@@ -14,7 +13,7 @@ const NotFound = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='div-img'>
-                        <img src={picture} alt='Nena disconforme' className='img'/>
+                        <img src="./assets/misc/not-found.jpg" alt='Nena disconforme' className='img'/>
                     </div>
                 </div>
                 <div className='row'>
