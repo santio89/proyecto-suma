@@ -5,7 +5,8 @@
     color: var(--color-tercero);
 }
 
-.row, .row-btn {
+.row,
+.row-btn {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -29,16 +30,26 @@
 
     .div-img {
         text-align: center;
-        width: clamp(280px, 280px + 80%, 640px);
+        width: clamp(280px, 280px + 80%, 680px);
         border-radius: 1em;
         margin: auto;
+        background: linear-gradient(45deg, var(--color-primero), blue);
+        position: relative;
 
         .img {
             width: 100%;
             object-fit: cover;
             border-radius: inherit;
-            outline: 4px dotted var(--color-primero);
-            outline-offset: 4px;
+            filter: contrast(1.04) brightness(1.04);
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, var(--color-primero), orange);
+            border-radius: inherit;
+            animation: opacityStart 4s infinite alternate linear;
         }
     }
 }

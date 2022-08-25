@@ -5,38 +5,55 @@
   color: var(--color-tercero);
 }
 
-.row, .row-btn {
+.row,
+.row-btn {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
 }
-.row .title, .row-btn .title {
+.row .title,
+.row-btn .title {
   font-size: var(--font-fluid-xxl);
   font-weight: bold;
   margin-bottom: 0.2em;
   margin-top: 0.1em;
 }
-.row .col, .row-btn .col {
+.row .col,
+.row-btn .col {
   text-align: justify;
 }
-.row .text, .row-btn .text {
+.row .text,
+.row-btn .text {
   font-size: var(--font-fluid-mdd);
   color: var(--color-primero);
 }
-.row .div-img, .row-btn .div-img {
+.row .div-img,
+.row-btn .div-img {
   text-align: center;
-  width: clamp(280px, 280px + 80%, 640px);
+  width: clamp(280px, 280px + 80%, 680px);
   border-radius: 1em;
   margin: auto;
+  background: linear-gradient(45deg, var(--color-primero), blue);
+  position: relative;
 }
-.row .div-img .img, .row-btn .div-img .img {
+.row .div-img .img,
+.row-btn .div-img .img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
-  outline: 4px dotted var(--color-primero);
-  outline-offset: 4px;
+  filter: contrast(1.04) brightness(1.04);
+}
+.row .div-img::before,
+.row-btn .div-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, var(--color-primero), orange);
+  border-radius: inherit;
+  -webkit-animation: opacityStart 4s infinite alternate linear;
+          animation: opacityStart 4s infinite alternate linear;
 }
 
 .row-btn {
