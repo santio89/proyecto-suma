@@ -16,7 +16,7 @@
   -webkit-animation: opacityStart 400ms ease-in;
           animation: opacityStart 400ms ease-in;
   overflow: hidden;
-  box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), 0.4);
+  box-shadow: 2px 2px 4px 0 rgba(var(--color-tercero-rgb), 0.4);
   background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247)), radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
   background-repeat: no-repeat;
   background-position: bottom left;
