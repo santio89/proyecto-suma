@@ -34,6 +34,7 @@
   border-radius: inherit;
   mix-blend-mode: screen;
   filter: contrast(140%) brightness(110%);
+  background: var(--color-segundo);
 }
 .home__banner p {
   position: absolute;

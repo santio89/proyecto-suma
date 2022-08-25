@@ -44,6 +44,7 @@
      object-fit: cover;
   border-radius: 0.8em;
   filter: contrast(1.04) brightness(1.04);
+  background: var(--color-segundo);
 }
 
 .row-btn {
