@@ -42,7 +42,7 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: inherit;
+  border-radius: 0.8em;
   filter: contrast(1.04) brightness(1.04);
 }
 
