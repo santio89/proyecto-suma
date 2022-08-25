@@ -33,7 +33,7 @@
         width: clamp(280px, 280px + 80%, 680px);
         border-radius: 1em;
         margin: auto;
-        background: linear-gradient(45deg, var(--color-primero), blue);
+        background: linear-gradient(45deg, var(--color-primero), coral);
         position: relative;
 
         .img {
@@ -41,15 +41,6 @@
             object-fit: cover;
             border-radius: inherit;
             filter: contrast(1.04) brightness(1.04);
-        }
-
-        &::before{
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(45deg, var(--color-primero), orange);
-            border-radius: inherit;
-            animation: opacityStart 4s infinite alternate linear;
         }
     }
 }
