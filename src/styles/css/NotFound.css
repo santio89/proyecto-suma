@@ -1,44 +1,44 @@
-.container {
+.container.NotFound {
   display: flex;
   flex-direction: column;
   margin: clamp(1em, 1em + 0.8vw, 4em) clamp(0.4em, 0.4em + 0.2vw, 1em);
   color: var(--color-tercero);
 }
 
-.row,
-.row-btn {
+.row.NotFound,
+.row-btn.NotFound {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
 }
-.row .title,
-.row-btn .title {
+.row.NotFound .title,
+.row-btn.NotFound .title {
   font-size: var(--font-fluid-xxl);
   font-weight: bold;
   margin-bottom: 0.2em;
   margin-top: 0.1em;
 }
-.row .col,
-.row-btn .col {
+.row.NotFound .col,
+.row-btn.NotFound .col {
   text-align: justify;
 }
-.row .text,
-.row-btn .text {
-  font-size: var(--font-fluid-mdd);
+.row.NotFound .text,
+.row-btn.NotFound .text {
+  font-size: var(--font-subt);
   color: var(--color-primero);
 }
-.row .div-img,
-.row-btn .div-img {
+.row.NotFound .div-img,
+.row-btn.NotFound .div-img {
   text-align: center;
-  width: clamp(280px, 280px + 80%, 680px);
+  width: clamp(280px, 280px + 80%, 620px);
   border-radius: 1em;
   margin: auto;
   background: linear-gradient(45deg, var(--color-primero), coral);
   position: relative;
 }
-.row .div-img .img,
-.row-btn .div-img .img {
+.row.NotFound .div-img .img,
+.row-btn.NotFound .div-img .img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -47,10 +47,10 @@
   background: var(--color-segundo);
 }
 
-.row-btn {
+.row-btn.NotFound {
   justify-content: center;
 }
-.row-btn .btn-volver {
+.row-btn.NotFound .btn-volver {
   margin-top: 2em;
   color: var(--color-segundo);
   background: var(--color-primero);

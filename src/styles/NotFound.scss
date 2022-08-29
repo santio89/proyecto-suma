@@ -1,12 +1,12 @@
-.container {
+.container.NotFound {
     display: flex;
     flex-direction: column;
     margin: clamp(1em, 1em + .8vw, 4em) clamp(.4em, .4em + .2vw, 1em);
     color: var(--color-tercero);
 }
 
-.row,
-.row-btn {
+.row.NotFound,
+.row-btn.NotFound {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -24,13 +24,13 @@
     }
 
     .text {
-        font-size: var(--font-fluid-mdd);
+        font-size: var(--font-subt);
         color: var(--color-primero);
     }
 
     .div-img {
         text-align: center;
-        width: clamp(280px, 280px + 80%, 680px);
+        width: clamp(280px, 280px + 80%, 620px);
         border-radius: 1em;
         margin: auto;
         background: linear-gradient(45deg, var(--color-primero), coral);
@@ -46,7 +46,7 @@
     }
 }
 
-.row-btn {
+.row-btn.NotFound {
     justify-content: center;
 
     .btn-volver {

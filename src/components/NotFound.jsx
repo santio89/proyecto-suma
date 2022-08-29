@@ -10,25 +10,25 @@ const NotFound = () => {
 
     return (
         <section className='section-full'>
-            <div className='container'>
-                <div className='row'>
+            <div className='container NotFound'>
+                <div className='row NotFound'>
                     <div className='div-img'>
                         <img src="./assets/misc/not-found.jpg" alt='Nena disconforme' className='img'/>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row NotFound'>
                     <div>
                         <h2 className='title'>¡Ups!</h2>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row NotFound'>
                     <div className='col'>
                         <p className='text'>
                             No encontramos la página que estabas buscando.
                         </p>
                     </div>
                 </div>
-                <div className='row-btn'>
+                <div className='row-btn NotFound'>
                     <Link to="/" className='btn-volver'>
                         Volver
                     </Link>

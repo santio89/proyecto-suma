@@ -31,7 +31,7 @@ const Help = () => {
                 <div className='row-links'>
                     <div className='col'>
                         <button onClick={() => modifyTab('reception')}>
-                            <h3  className={activeTab === 'reception' ? 'btn-active' : ''}>Recepción del pedido</h3>
+                            <h3 className={activeTab === 'reception' ? 'btn-active' : ''}>Recepción del pedido</h3>
                         </button>
                     </div>
                     <div className='col'>
@@ -50,7 +50,7 @@ const Help = () => {
                     <div className='row'>
                         <div className='col'>
                             <p className='text'>
-                                Puedes elegir recibir tu pedido en un domicilio o retirarlo gratis en nuestra oficina en Carrasco. 
+                                Puedes elegir recibir tu pedido en un domicilio o retirarlo gratis en nuestra oficina en Carrasco.
                             </p>
                             <p className='text'>
                                 Las entregas a domicilio en Montevideo se realizan en horario de 10:00 a 17:00 hs. en días hábiles.
@@ -61,7 +61,7 @@ const Help = () => {
                         </div>
                     </div>
                 </section>
-                
+
                 <section className={activeTab !== 'shipping' ? 'inactive' : ''} id='shipping'>
                     <div className='row'>
                         <div className='col'>
@@ -77,7 +77,7 @@ const Help = () => {
                                     Durante promociones, la entrega de pedidos puede sufrir retrasos. Igualmente siempre será informada si llegan a ocurrir demoras.
                                 </p>
                             </section>
-                            
+
                             <section className='paragraph'>
                                 <h4>Costos de envío:</h4>
                                 <p className='text'>
@@ -93,7 +93,7 @@ const Help = () => {
                                     * Para ventas mayores a $5000 el envío es gratuito. *
                                 </p>
                             </section>
-                            
+
                             <section className='paragraph'>
                                 <h4>Envoltorio del regalo:</h4>
                                 <p className='text'>
@@ -103,7 +103,7 @@ const Help = () => {
                         </div>
                     </div>
                 </section>
-                
+
                 <section className={activeTab !== 'return' ? 'inactive' : ''} id='return'>
                     <div className='row' id='return'>
                         <div className='col'>
@@ -145,12 +145,12 @@ const Help = () => {
                                 <h4>Cancelaciones y devoluciones:</h4>
                                 <p className='text'>
                                     Las devoluciones se realizarán únicamente en caso de comprar un artículo disponible en la web pero que físicamente no se encuentre en stock. Ante una eventual cancelación de tu compra, la devolución se realizará de acuerdo con el método de pago utilizado.
-                                </p> 
+                                </p>
                             </section>
                         </div>
                     </div>
                 </section>
-                
+
                 <div className='row-btn'>
                     <Link to="/" className='btn-volver'>
                         Volver
