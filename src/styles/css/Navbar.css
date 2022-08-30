@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  padding: 1.4% 0;
+  padding: 1.4% 0.1em;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -78,7 +78,7 @@
 }
 @media only screen and (max-width: 489px) {
   .navbar {
-    padding: 4% 0;
+    padding: 4% 0.1em;
     height: 6rem;
   }
   .navbar .logo-btn {
