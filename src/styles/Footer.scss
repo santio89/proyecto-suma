@@ -36,6 +36,9 @@ section {
     text-align: center;
     padding-bottom: 2.5rem;
     color: var(--color-primero);
+    .names {
+        font-weight: bold;
+    }
 }
 
 .btn-responsive {

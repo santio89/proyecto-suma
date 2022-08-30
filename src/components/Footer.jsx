@@ -80,7 +80,9 @@ const Footer = ({darkTheme, toggleDarkTheme}) => {
             </div>
 
             <div className='development'>
-                <p>Desarrollado por </p>
+                <p>Desarrollado por
+                    <span className='names'> Santiago Olais</span>, <span className='names'>Viviana Petraroia</span>, <span className='names'>Macarena Romero</span> y <span className='names'>Victoria Salvatierra</span>
+                </p>
             </div>
         </section>
     );

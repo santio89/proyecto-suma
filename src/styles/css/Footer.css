@@ -35,6 +35,9 @@ section {
   padding-bottom: 2.5rem;
   color: var(--color-primero);
 }
+.development .names {
+  font-weight: bold;
+}
 
 .btn-responsive {
   max-width: 180px;
