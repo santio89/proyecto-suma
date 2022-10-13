@@ -13,17 +13,17 @@
         {
             "nombre": "Buzo hilo",
             "descripcion": "• Nombre: Buzo primera puesta hilo\n• Marca: Gocco\n• Colores: Celeste\n• Talles: 1-3 6-12",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/buzo-hilo.jpg"
         },
 	    {
             "nombre": "Pijama corto barcos",
             "descripcion": "• Nombre: Pijama corto barcos algodón\n• Marca: Gocco\n• Colores: Celeste\n• Talles: 0-1",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/pijama-corto-barcos.jpg"
         },
 	    {
             "nombre": "Pijama largo puntos",
             "descripcion": "• Nombre: Pijama largo puntos algodón\n• Marca: Gocco\n• Colores: Celeste, Rosa viejo\n• Talles: 0-12",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/pijama-largo-puntos.jpg"
         },
         {
             "nombre": "Remera frutillas",

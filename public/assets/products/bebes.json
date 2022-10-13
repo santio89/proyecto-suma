@@ -3,12 +3,12 @@
         {
             "nombre": "Bañador flor",
             "descripcion": "• Nombre: Bañador varón flor\n• Marca: Gocco\n• Colores: Turquesa estampa\n• Talles: 7-8-9-10",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/bombachita-manzanitas.JPG"
         },
 	    {
             "nombre": "Bañador manzanas",
             "descripcion": "• Nombre: Bañador varón manzanas\n• Marca: Gocco\n• Colores: Bordó estampa\n• Talles: 5-6",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/banador-varon-manzanas.JPG"
         },
 	    {
             "nombre": "Body hojas",
@@ -18,12 +18,12 @@
 	    {
             "nombre": "Body tiny treasure",
             "descripcion": "• Nombre: Body tiny treasure\n• Marca: Tinycottons\n• Colores: Blanco\n• Talles: 6-9-12-18-24",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/body-tiny-treasure.JPG"
         },
 	    {
             "nombre": "Bombachita manzanitas",
             "descripcion": "• Nombre: Bombachita manzanitas\n• Marca: Gocco\n• Colores: Celeste estampa\n• Talles: 18-24",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/bombachita-manzanitas.JPG"
         },
 	    {
             "nombre": "Buzo triángulos",
@@ -33,7 +33,7 @@
 	    {
             "nombre": "Camisa rainbow",
             "descripcion": "• Nombre: Camisa rainbow\n• Marca: Gocco\n• Colores: Bordó multicolor\n• Talles: 9-24",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/camisa-rainbow.JPG"
         },
 	    {
             "nombre": "Camisa tiny wreath",
@@ -48,22 +48,22 @@
 	    {
             "nombre": "Pijama corto barcos",
             "descripcion": "• Nombre: Pijama corto barcos algodón\n• Marca: Gocco\n• Colores: Celeste\n• Talles: 9-18",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/pijama-corto-barcos.JPG"
         },
         {
             "nombre": "Pijama largo puntos",
             "descripcion": "• Nombre: Pijama largo puntos algodón\n• Marca: Gocco\n• Colores: Rosa\n• Talles: 12-18",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/pijama-largo-puntos.JPG"
         },
 	    {
             "nombre": "Ranita pájaros",
             "descripcion": "• Nombre: Ranita pájaros nena\n• Marca: Gocco\n• Colores: Estampa flor pájaros\n• Talles: 6-12",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/ranita-pajaros.JPG"
         },
         {
             "nombre": "Ranita rayas",
             "descripcion": "• Nombre: Ranita rayas unisex\n• Marca: Gocco\n• Colores: Celeste\n• Talles: 9-12 18-24",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/ranita-rayas.JPG"
         },
 	    {
             "nombre": "Remera frutilla",
@@ -108,7 +108,7 @@
 	    {
             "nombre": "Saco rayas",
             "descripcion": "• Nombre: Saco rayas hilo\n• Marca: Gocco\n• Colores: Marino blanco\n• Talles: 9-18",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/saco-rayas-bebe.JPG"
         },
         {
             "nombre": "Traje de baño vichy",
@@ -118,12 +118,12 @@
         {
             "nombre": "Vestido bordado",
             "descripcion": "• Nombre: Vestido bordado bombachudo\n• Marca: Gocco\n• Colores: Bordado blanco\n• Talles: 6-12 18-24",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/vestido-bordado.JPG"
         },
         {
             "nombre": "Vestido ramita",
             "descripcion": "• Nombre: Vestido ramita bordó\n• Marca: Gocco\n• Colores: Bordó\n• Talles: 6-12",
-            "url": "https://picsum.photos/800/800"
+            "url": "./assets/images/vestido-ramita.JPG"
         }
     ]
 }
