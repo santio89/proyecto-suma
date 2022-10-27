@@ -3,52 +3,52 @@
         {
             "nombre": "Body hojas",
             "descripcion": "• Nombre: Body hojas celeste\n• Marca: Gocco\n• Colores: Celeste\n• Talles: 0-1",
-            "url": "https://source.unsplash.com/random"
+            "url": "https://picsum.photos/800/800"
         },
-        {
+	    {
             "nombre": "Body tiny treasure",
             "descripcion": "• Nombre: Body tiny treasure\n• Marca: Tinycottons\n• Colores: Blanco\n• Talles: 3",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/body-paloma-tiny.jpg"
         },
         {
             "nombre": "Buzo hilo",
             "descripcion": "• Nombre: Buzo primera puesta hilo\n• Marca: Gocco\n• Colores: Celeste\n• Talles: 1-3 6-12",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/buzo-hilo.jpg"
         },
-        {
+	    {
             "nombre": "Pijama corto barcos",
             "descripcion": "• Nombre: Pijama corto barcos algodón\n• Marca: Gocco\n• Colores: Celeste\n• Talles: 0-1",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/pijama-corto-barcos.jpg"
         },
-        {
+	    {
             "nombre": "Pijama largo puntos",
             "descripcion": "• Nombre: Pijama largo puntos algodón\n• Marca: Gocco\n• Colores: Celeste, Rosa viejo\n• Talles: 0-12",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/pijama-largo-puntos.jpg"
         },
         {
             "nombre": "Remera frutillas",
             "descripcion": "• Nombre: Remera frutillas\n• Marca: Bobo choses\n• Colores: Amarilla\n• Talles: 3-6",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/remera-frutrillas-amarilla.jpg"
         },
-        {
+	    {
             "nombre": "Remera paisaje",
             "descripcion": "• Nombre: Remera paisaje\n• Marca: Bobo choses\n• Colores: Verde agua\n• Talles: 3-6",
-            "url": "https://source.unsplash.com/random"
-        },
+            "url": "./assets/images/remera-paisaje-bc.jpg"
+        },	
         {
             "nombre": "Remera perrito",
             "descripcion": "• Nombre: Remera perrito\n• Marca: Bobo choses\n• Colores: Gris\n• Talles: 3-6",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/remera-perrito.jpg"
         },
         {
             "nombre": "Remera petunia",
             "descripcion": "• Nombre: Remera petunia\n• Marca: Bobo choses\n• Colores: Lila\n• Talles: 3-6",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/remera-petunia.jpg"
         },
         {
             "nombre": "Remera triángulos",
             "descripcion": "• Nombre: Remera triángulos\n• Marca: Bobo choses\n• Colores: Crema\n• Talles: 3-6",
-            "url": "https://source.unsplash.com/random"
+            "url": "./assets/images/remera-triangulos-azul.jpg"
         }
     ]
 }
