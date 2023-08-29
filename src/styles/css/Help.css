@@ -87,13 +87,13 @@
 
 @media only screen and (max-width: 576px) {
   .row .title,
-.row-btn .title,
-.row-links .title {
+  .row-btn .title,
+  .row-links .title {
     font-size: 1.25em;
   }
   .row .text,
-.row-btn .text,
-.row-links .text {
+  .row-btn .text,
+  .row-links .text {
     font-size: 0.6em;
   }
   .row-links {
@@ -115,13 +115,13 @@
 }
 @media only screen and (max-width: 766px) and (min-width: 577px) {
   .row .title,
-.row-btn .title,
-.row-links .title {
+  .row-btn .title,
+  .row-links .title {
     font-size: 1.9em;
   }
   .row .text,
-.row-btn .text,
-.row-links .text {
+  .row-btn .text,
+  .row-links .text {
     font-size: 0.7em;
   }
   .row-links {
@@ -143,13 +143,13 @@
 }
 @media only screen and (max-width: 992px) and (min-width: 767px) {
   .row .title,
-.row-btn .title,
-.row-links .title {
+  .row-btn .title,
+  .row-links .title {
     font-size: 2em;
   }
   .row .text,
-.row-btn .text,
-.row-links .text {
+  .row-btn .text,
+  .row-links .text {
     font-size: 0.9em;
   }
   .row-links {

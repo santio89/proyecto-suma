@@ -1,6 +1,5 @@
 .producto {
-  -webkit-animation: opacityStart 1.2s ease-in;
-          animation: opacityStart 1.2s ease-in;
+  animation: opacityStart 1.2s ease-in;
   max-width: 340px;
   color: var(--color-tercero);
   position: relative;
@@ -14,8 +13,7 @@
   position: relative;
   width: 100%;
   border-radius: 1.8em;
-  -webkit-animation: opacityStart 0.6s ease-in;
-          animation: opacityStart 0.6s ease-in;
+  animation: opacityStart 0.6s ease-in;
 }
 .producto__innerTextContainer {
   position: absolute;
@@ -39,8 +37,7 @@
   border: 1px solid var(--color-segundo);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  -webkit-animation: opacityStart 0.3s ease-in-out;
-          animation: opacityStart 0.3s ease-in-out;
+  animation: opacityStart 0.3s ease-in-out;
   white-space: pre-line;
   line-height: 1.8;
   font-size: var(--font-p);
@@ -96,11 +93,6 @@
 .producto__imgModal button:hover, .producto__imgModal button:focus-visible {
   color: var(--color-tercero);
   text-shadow: 2px 2px 0 var(--color-segundo);
-}
-.producto__imgModal::-webkit-backdrop {
-  background: rgba(20, 20, 20, 0.8);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
 }
 .producto__imgModal::backdrop {
   background: rgba(20, 20, 20, 0.8);

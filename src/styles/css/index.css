@@ -65,6 +65,7 @@ html ::-webkit-scrollbar-thumb {
 body {
   font-family: "century gothic", sans-serif;
   background-color: var(--color-segundo);
+  display: flex;
 }
 
 #root,
@@ -97,8 +98,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  -webkit-animation: rotation 0.6s linear infinite;
-          animation: rotation 0.6s linear infinite;
+  animation: rotation 0.6s linear infinite;
   margin-top: 4%;
 }
 
@@ -112,14 +112,6 @@ body {
     --font-p: var(--font-xxs);
   }
 }
-@-webkit-keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -128,29 +120,9 @@ body {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes translateFromLeft {
-  0% {
-    transform: translateX(-200%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
 @keyframes translateFromLeft {
   0% {
     transform: translateX(-200%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes translateFromRight {
-  0% {
-    transform: translateX(120%);
     opacity: 0;
   }
   100% {
@@ -168,37 +140,12 @@ body {
     opacity: 1;
   }
 }
-@-webkit-keyframes opacityStart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes opacityStart {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-@-webkit-keyframes bannerGrad {
-  0% {
-    background-position: bottom left;
-  }
-  25% {
-    background-position: top left;
-  }
-  50% {
-    background-position: top right;
-  }
-  75% {
-    background-position: bottom right;
-  }
-  100% {
-    background-position: bottom left;
   }
 }
 @keyframes bannerGrad {

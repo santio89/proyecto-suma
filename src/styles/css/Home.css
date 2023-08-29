@@ -13,8 +13,7 @@
   height: clamp(180px, 180px + 5vw + 5vh, 30vh);
   position: relative;
   border-radius: 0.28em;
-  -webkit-animation: opacityStart 400ms ease-in;
-          animation: opacityStart 400ms ease-in;
+  animation: opacityStart 400ms ease-in;
   overflow: hidden;
   box-shadow: 1px 2px 4px 0 rgba(var(--color-tercero-rgb), 0.4);
   background: radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247)), radial-gradient(ellipse at top, rgb(168, 23, 96), rgb(0, 95, 63), rgb(85, 15, 247));
@@ -47,8 +46,7 @@
   right: 1%; */
   color: var(--color-white);
   opacity: 0;
-  -webkit-animation: opacityStart 1.2s ease-in-out forwards;
-          animation: opacityStart 1.2s ease-in-out forwards;
+  animation: opacityStart 1.2s ease-in-out forwards;
   text-shadow: 2px 2px 0 var(--color-black);
   /* text-shadow: 0px 0px 20px var(--color-primero); */
   padding: 0.4em;
@@ -71,8 +69,7 @@
   width: clamp(300px, 300px + 0.4vw, 340px);
   max-width: 100%;
   font-size: var(--font-p);
-  -webkit-animation: opacityStart 1.2s ease-in;
-          animation: opacityStart 1.2s ease-in;
+  animation: opacityStart 1.2s ease-in;
 }
 .home__categories__card__imgContainer {
   width: 100%;
@@ -103,7 +100,7 @@
   font-size: 1.2em;
 }
 .home__categories__card__info__btn {
-  color: var(--color-segundo);
+  color: var(--color-white);
   background: var(--color-primero);
   padding: 0.4em 0.8em;
   border-radius: 0.4em;

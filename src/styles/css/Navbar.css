@@ -12,7 +12,6 @@
   z-index: 1;
 }
 .navbar .link-logo {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
